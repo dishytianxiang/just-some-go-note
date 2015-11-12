@@ -1,4 +1,4 @@
-package main
+﻿package main
 
 import (
 	"io"
@@ -15,7 +15,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	mux.Handle("/tmp/", http.StripPrefix("/tmp/", http.FileServer(http.Dir("/tmp"))))
+	mux.Handle("/tmp/", http.StripPrefix("/tmp/", http.FileServer(http.Dir("/home/dishy/frontFrame/webFrontFrame/bootstrap/"))))
 	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(wd))))
 	err = http.ListenAndServe(":8080", mux)
 	if err != nil {

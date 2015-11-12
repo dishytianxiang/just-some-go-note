@@ -1,9 +1,8 @@
-package main
+﻿package main
 
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	//"hello/controllers"
 	"hello/models"
 	_ "hello/routers"
 )
