@@ -1,0 +1,13 @@
+{{template "header"}}
+{{template "navbar" .}}
+	<div class = "container">
+			<form method = "post" action = "/login">
+				<label for = "username">USERNAME</label>
+				<input id = "username" type = "text" placeholder = "input you name"/>
+				&nbsp;
+				<label for = "passwd">PASSWD</label>
+				<input id = "passwd" type = "password" placeholder = "input you passwd"/>
+				<input type = "submit"/>
+			</form>
+		</div>
+{{template "footer"}}
