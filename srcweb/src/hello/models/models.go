@@ -13,7 +13,12 @@ const (
 	_DB_NAME       = "data/beeblog.db"
 	_SQITE3_DRIVER = "sqlite3"
 )
-
+type User struct {
+	Id 				int64
+	Email			string
+	Passwd			string
+	CreatedTime		time.Time `orm:"index"`
+}
 type Category struct {
 	Id              int64
 	Title           string
@@ -42,7 +47,7 @@ func RegisterDB() {
 		os.MkdirAll(path.Dir(_DB_NAME), os.ModePerm)
 		os.Create(_DB_NAME)
 	}
-	orm.RegisterModel(new(Category), new(Topic))
+	orm.RegisterModel(new(Category), new(Topic),new(User))
 	orm.RegisterDriver(_SQITE3_DRIVER, orm.DR_Sqlite)
 	orm.RegisterDataBase("default", _SQITE3_DRIVER, _DB_NAME, 10)
 }

@@ -89,10 +89,10 @@
 			if($("#email").val()==""){
 				alert("please input email");
 			}else{
-				if($("#password").val()==""){
+				if($("#passwd").val()==""){
 					alert("please input passwd");
 				}else{
-					var  pass= $("#password").val();
+					var  pass= $("#passwd").val();
 					var	hash = $.md5(pass);
 					$("#passwd").val(hash);
 					obj.submit();
