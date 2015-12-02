@@ -93,8 +93,8 @@
 					alert("please input passwd");
 				}else{
 					var  pass= $("#passwd").val();
-					var	hash = $.md5(pass);
-					$("#passwd").val(hash);
+					//var	hash = $.md5(pass);
+					$("#passwd").val(pass);
 					obj.submit();
 				}
 			}

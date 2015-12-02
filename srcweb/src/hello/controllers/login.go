@@ -15,6 +15,8 @@ func (this *LoginController) Get() {
 func (this *LoginController) Post() {
 	passwd := this.Ctx.Request.Form["passwd"]
 	email := this.Ctx.Request.Form["email"]
+	fmt.Print("======",passwd)
+	fmt.Print("======",email)	
 	fmt.Print("======",this.Ctx.Request.Form["email"])
 	
 	this.TplNames = "main.html"
