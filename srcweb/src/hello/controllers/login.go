@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"fmt"
+	//"fmt"
 )
 
 type LoginController struct {
@@ -10,14 +10,20 @@ type LoginController struct {
 }
 
 func (this *LoginController) Get() {
-	this.TplNames = "login.html"
+	
+	this.TplNames = "register.html"
 }
 func (this *LoginController) Post() {
-	passwd := this.Ctx.Request.Form["passwd"]
-	email := this.Ctx.Request.Form["email"]
-	fmt.Print("======",passwd)
-	fmt.Print("======",email)	
-	fmt.Print("======",this.Ctx.Request.Form["email"])
-	
-	this.TplNames = "main.html"
+	//this.Ctx.WriteString(fmt.Sprint(this.Input()))
+	email := this.Input().Get("email")
+	passwd := this.Input().Get("passwd")
+	if beego.AppConfig.String("email") == email &&
+		beego.AppConfig.String("passwd") == passwd {
+			this.Ctx.SetCookie("email",email,30,"/")
+			this.Ctx.SetCookie("passwd",passwd,30,"/")
+		this.Redirect("/category",301)
+	}else {
+	this.Redirect("/category",301)
+	}
+	return
 }
