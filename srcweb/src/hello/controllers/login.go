@@ -21,7 +21,7 @@ func (this *LoginController) Post() {
 		beego.AppConfig.String("passwd") == passwd {
 			this.Ctx.SetCookie("email",email,30,"/")
 			this.Ctx.SetCookie("passwd",passwd,30,"/")
-		this.Redirect("/category",301)
+		this.Redirect("/view",301)
 	}else {
 	this.Redirect("/category",301)
 	}
