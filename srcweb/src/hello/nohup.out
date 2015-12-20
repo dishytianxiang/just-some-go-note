@@ -1,0 +1,165 @@
+table `category` already exists, skip
+table `topic` already exists, skip
+table `user` already exists, skip
+2015/12/18 12:23:17 [1;34m[asm_amd64.s:2232] [I] http server Running on :80[0m
+table `category` already exists, skip
+table `topic` already exists, skip
+table `user` already exists, skip
+2015/12/19 12:24:55 [1;34m[asm_amd64.s:2232] [I] http server Running on :80[0m
+2015/12/19 12:24:56 [1;34m[router.go:854] [D] | GET        | /                                        | 8.903603ms       | match      | /                                        | [0m
+2015/12/19 13:15:18 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 932.592µs        | notmatch   | [0m
+2015/12/19 13:22:48 [1;34m[router.go:854] [D] | HEAD       | /                                        | 50.219µs         | match      | /                                        | [0m
+2015/12/19 15:53:20 [1;34m[router.go:854] [D] | HEAD       | /                                        | 46.769µs         | match      | /                                        | [0m
+2015/12/19 15:59:10 [1;34m[router.go:854] [D] | GET        | /                                        | 7.565765ms       | match      | /                                        | [0m
+2015/12/19 16:09:30 [1;34m[router.go:854] [D] | GET        |                                          | 879.411µs        | notmatch   | [0m
+2015/12/19 16:11:38 [1;34m[router.go:854] [D] | GET        | /                                        | 8.396753ms       | match      | /                                        | [0m
+2015/12/19 16:13:06 [1;34m[router.go:854] [D] | CONNECT    |                                          | 934.562µs        | notmatch   | [0m
+2015/12/19 16:49:06 [1;34m[router.go:854] [D] | GET        | /                                        | 8.887908ms       | match      | /                                        | [0m
+2015/12/19 17:23:33 [1;34m[router.go:854] [D] | GET        | /p.aspx                                  | 868.834µs        | notmatch   | [0m
+2015/12/19 17:35:06 [1;34m[router.go:854] [D] | GET        | /p.aspx                                  | 997.032µs        | notmatch   | [0m
+2015/12/19 22:22:32 [1;34m[router.go:854] [D] | POST       | /azenv.php                               | 1.167496ms       | notmatch   | [0m
+2015/12/19 23:29:10 [1;34m[router.go:854] [D] | HEAD       | /                                        | 42.073µs         | match      | /                                        | [0m
+2015/12/19 23:52:30 [1;34m[router.go:854] [D] | CONNECT    |                                          | 840.083µs        | notmatch   | [0m
+2015/12/19 23:56:17 [1;34m[router.go:854] [D] | HEAD       | /                                        | 39.382µs         | match      | /                                        | [0m
+2015/12/20 01:20:58 [1;34m[router.go:854] [D] | GET        | /invoker/JMXInvokerServlet               | 937.726µs        | notmatch   | [0m
+2015/12/20 01:42:49 [1;34m[router.go:854] [D] | GET        | /                                        | 8.441466ms       | match      | /                                        | [0m
+2015/12/20 04:48:01 [1;34m[router.go:854] [D] | HEAD       | /                                        | 47.475µs         | match      | /                                        | [0m
+2015/12/20 08:27:28 [1;34m[router.go:854] [D] | GET        | /                                        | 7.803563ms       | match      | /                                        | [0m
+2015/12/20 08:27:29 [1;34m[router.go:854] [D] | GET        | /                                        | 8.117ms          | match      | /                                        | [0m
+2015/12/20 09:30:47 [1;34m[router.go:854] [D] | HEAD       | /                                        | 46.471µs         | match      | /                                        | [0m
+2015/12/20 11:03:18 [1;34m[router.go:854] [D] | HEAD       | /                                        | 65.876µs         | match      | /                                        | [0m
+2015/12/20 11:35:12 [1;34m[router.go:854] [D] | GET        | /                                        | 8.779447ms       | match      | /                                        | [0m
+2015/12/20 11:35:23 [1;34m[router.go:854] [D] | POST       | /login                                   | 130.676µs        | match      | /login                                   | [0m
+2015/12/20 11:35:23 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.637ms          | match      | /view                                    | [0m
+2015/12/20 12:01:37 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.82464ms        | match      | /view                                    | [0m
+2015/12/20 12:02:25 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.6357ms         | match      | /view                                    | [0m
+2015/12/20 12:02:56 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.315295ms       | match      | /view                                    | [0m
+2015/12/20 12:03:26 [1;34m[router.go:854] [D] | GET        | /view                                    | 3.688623ms       | match      | /view                                    | [0m
+2015/12/20 12:03:29 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.827694ms       | match      | /view                                    | [0m
+2015/12/20 12:03:57 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.132428ms       | match      | /view                                    | [0m
+2015/12/20 12:05:48 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.23ms           | match      | /view                                    | [0m
+2015/12/20 12:05:50 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.179705ms       | match      | /view                                    | [0m
+2015/12/20 12:07:12 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.749167ms       | match      | /view                                    | [0m
+2015/12/20 12:07:43 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.969818ms       | match      | /view                                    | [0m
+2015/12/20 12:08:50 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.616705ms       | match      | /view                                    | [0m
+2015/12/20 12:08:53 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.873234ms       | match      | /view                                    | [0m
+2015/12/20 12:09:34 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 834.394µs        | notmatch   | [0m
+2015/12/20 12:09:58 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.970276ms       | match      | /view                                    | [0m
+2015/12/20 12:10:01 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.657887ms       | match      | /view                                    | [0m
+2015/12/20 12:11:47 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.185829ms       | match      | /view                                    | [0m
+2015/12/20 12:12:14 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.076085ms       | match      | /view                                    | [0m
+2015/12/20 12:12:17 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.939532ms       | match      | /view                                    | [0m
+2015/12/20 12:12:18 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.81698ms        | match      | /view                                    | [0m
+2015/12/20 12:12:25 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.96875ms        | match      | /view                                    | [0m
+2015/12/20 12:12:57 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.337032ms       | match      | /view                                    | [0m
+2015/12/20 12:13:18 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.160947ms       | match      | /view                                    | [0m
+2015/12/20 12:13:48 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.895149ms       | match      | /view                                    | [0m
+2015/12/20 12:15:56 [1;34m[router.go:854] [D] | GET        | /view                                    | 3.986539ms       | match      | /view                                    | [0m
+2015/12/20 12:16:10 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.821667ms       | match      | /view                                    | [0m
+2015/12/20 12:16:59 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.148622ms       | match      | /view                                    | [0m
+2015/12/20 12:17:54 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.570848ms       | match      | /view                                    | [0m
+2015/12/20 12:18:03 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.732783ms       | match      | /view                                    | [0m
+2015/12/20 12:18:28 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.295553ms       | match      | /view                                    | [0m
+2015/12/20 12:18:49 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.930345ms       | match      | /view                                    | [0m
+2015/12/20 12:22:04 [1;34m[router.go:854] [D] | GET        | /view                                    | 3.986825ms       | match      | /view                                    | [0m
+2015/12/20 12:22:13 [1;34m[router.go:854] [D] | GET        | /                                        | 8.203499ms       | match      | /                                        | [0m
+2015/12/20 12:22:16 [1;34m[router.go:854] [D] | POST       | /login                                   | 157.922µs        | match      | /login                                   | [0m
+2015/12/20 12:22:16 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.198433ms       | match      | /view                                    | [0m
+2015/12/20 12:25:47 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.114441ms       | match      | /view                                    | [0m
+2015/12/20 12:29:57 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.188127ms       | match      | /view                                    | [0m
+2015/12/20 14:08:23 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.446009ms       | match      | /view                                    | [0m
+2015/12/20 14:08:23 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.079069ms       | match      | /view                                    | [0m
+2015/12/20 14:08:24 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.345852ms       | match      | /view                                    | [0m
+2015/12/20 14:08:24 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.869239ms       | match      | /view                                    | [0m
+2015/12/20 14:13:52 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.469996ms       | match      | /view                                    | [0m
+2015/12/20 14:15:07 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.179009ms       | match      | /view                                    | [0m
+2015/12/20 14:15:27 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.745894ms       | match      | /view                                    | [0m
+2015/12/20 14:15:35 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.300592ms       | match      | /view                                    | [0m
+2015/12/20 14:16:24 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.564822ms       | match      | /view                                    | [0m
+2015/12/20 14:16:32 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.438272ms       | match      | /view                                    | [0m
+2015/12/20 14:17:03 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.134426ms       | match      | /view                                    | [0m
+2015/12/20 14:17:21 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:20:54 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.083294ms       | match      | /view                                    | [0m
+2015/12/20 14:20:54 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:21:38 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.855499ms       | match      | /view                                    | [0m
+2015/12/20 14:21:38 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:22:17 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.161177ms       | match      | /view                                    | [0m
+2015/12/20 14:22:18 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:22:18 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.429008ms       | match      | /view                                    | [0m
+2015/12/20 14:22:18 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:22:18 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.75744ms        | match      | /view                                    | [0m
+2015/12/20 14:22:18 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:23:58 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.09387ms        | match      | /view                                    | [0m
+2015/12/20 14:23:59 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:25:08 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.738334ms       | match      | /view                                    | [0m
+2015/12/20 14:25:08 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:25:11 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.535327ms       | match      | /view                                    | [0m
+2015/12/20 14:25:11 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:26:04 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.105625ms       | match      | /view                                    | [0m
+2015/12/20 14:26:05 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:26:07 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.892129ms       | match      | /view                                    | [0m
+2015/12/20 14:26:07 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:27:16 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.720827ms       | match      | /view                                    | [0m
+2015/12/20 14:27:16 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:30:21 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.470007ms       | match      | /view                                    | [0m
+2015/12/20 14:30:21 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:30:54 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.72255ms        | match      | /view                                    | [0m
+2015/12/20 14:30:54 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:31:43 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.671914ms       | match      | /view                                    | [0m
+2015/12/20 14:31:43 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:34:08 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 1.081817ms       | notmatch   | [0m
+2015/12/20 14:35:13 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.113006ms       | match      | /view                                    | [0m
+2015/12/20 14:35:13 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:36:01 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.714269ms       | match      | /view                                    | [0m
+2015/12/20 14:36:01 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:36:03 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.03708ms        | match      | /view                                    | [0m
+2015/12/20 14:36:04 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:37:46 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.480193ms       | match      | /view                                    | [0m
+2015/12/20 14:37:46 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:37:46 [1;33m[staticfile.go:61] [W] Can't find the file: static/fonts/glyphicons-halflings-regular.woff stat static/fonts/glyphicons-halflings-regular.woff: no such file or directory [0m
+2015/12/20 14:37:46 [1;33m[staticfile.go:61] [W] Can't find the file: static/fonts/glyphicons-halflings-regular.ttf stat static/fonts/glyphicons-halflings-regular.ttf: no such file or directory [0m
+2015/12/20 14:37:46 [1;33m[staticfile.go:61] [W] Can't find the file: static/fonts/glyphicons-halflings-regular.svg stat static/fonts/glyphicons-halflings-regular.svg: no such file or directory [0m
+2015/12/20 14:38:41 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.592389ms       | match      | /view                                    | [0m
+2015/12/20 14:38:41 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:38:41 [1;33m[staticfile.go:61] [W] Can't find the file: static/fonts/glyphicons-halflings-regular.woff stat static/fonts/glyphicons-halflings-regular.woff: no such file or directory [0m
+2015/12/20 14:38:41 [1;33m[staticfile.go:61] [W] Can't find the file: static/fonts/glyphicons-halflings-regular.ttf stat static/fonts/glyphicons-halflings-regular.ttf: no such file or directory [0m
+2015/12/20 14:38:41 [1;33m[staticfile.go:61] [W] Can't find the file: static/fonts/glyphicons-halflings-regular.svg stat static/fonts/glyphicons-halflings-regular.svg: no such file or directory [0m
+2015/12/20 14:48:28 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.566247ms       | match      | /view                                    | [0m
+2015/12/20 14:48:28 [1;33m[staticfile.go:61] [W] Can't find the file: static/fonts/glyphicons-halflings-regular.woff stat static/fonts/glyphicons-halflings-regular.woff: no such file or directory [0m
+2015/12/20 14:48:28 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:48:28 [1;33m[staticfile.go:61] [W] Can't find the file: static/fonts/glyphicons-halflings-regular.ttf stat static/fonts/glyphicons-halflings-regular.ttf: no such file or directory [0m
+2015/12/20 14:48:28 [1;33m[staticfile.go:61] [W] Can't find the file: static/fonts/glyphicons-halflings-regular.svg stat static/fonts/glyphicons-halflings-regular.svg: no such file or directory [0m
+2015/12/20 14:51:47 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.848243ms       | match      | /view                                    | [0m
+2015/12/20 14:51:47 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:52:55 [1;34m[router.go:854] [D] | GET        | /view                                    | 3.912505ms       | match      | /view                                    | [0m
+2015/12/20 14:52:55 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:53:17 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.612184ms       | match      | /view                                    | [0m
+2015/12/20 14:53:18 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:54:55 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.143237ms       | match      | /view                                    | [0m
+2015/12/20 14:54:55 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:55:16 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.335422ms       | match      | /view                                    | [0m
+2015/12/20 14:55:16 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 14:56:54 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.867435ms       | match      | /view                                    | [0m
+2015/12/20 14:56:54 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 15:01:19 [1;34m[router.go:854] [D] | GET        | /view                                    | 3.785211ms       | match      | /view                                    | [0m
+2015/12/20 15:01:19 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 15:01:55 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.814735ms       | match      | /view                                    | [0m
+2015/12/20 15:01:55 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 15:02:32 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.013589ms       | match      | /view                                    | [0m
+2015/12/20 15:02:32 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 15:11:00 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.304332ms       | match      | /view                                    | [0m
+2015/12/20 15:11:00 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 15:11:48 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.236333ms       | match      | /view                                    | [0m
+2015/12/20 15:11:49 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 15:12:41 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.552974ms       | match      | /view                                    | [0m
+2015/12/20 15:12:41 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 15:17:21 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.380038ms       | match      | /view                                    | [0m
+2015/12/20 15:17:21 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 15:17:38 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.83658ms        | match      | /view                                    | [0m
+2015/12/20 15:17:39 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 15:24:55 [1;34m[router.go:854] [D] | GET        | /view                                    | 4.492777ms       | match      | /view                                    | [0m
+2015/12/20 15:24:55 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 15:25:06 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.109737ms       | match      | /view                                    | [0m
+2015/12/20 15:25:06 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
+2015/12/20 15:25:21 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.426548ms       | match      | /view                                    | [0m
+2015/12/20 15:25:21 [1;33m[staticfile.go:61] [W] Can't find the file: static/js/jquery.min.map stat static/js/jquery.min.map: no such file or directory [0m
