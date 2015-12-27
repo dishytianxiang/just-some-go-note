@@ -13,3 +13,6 @@ func (this *ViewController) Get() {
 	
 	this.TplNames = "view.html"
 }
+func (this *ViewController) Document() {
+	this.TplNames = "document.html"
+}
