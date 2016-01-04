@@ -8,17 +8,57 @@ import (
 	"path"
 	"time"
 	"strconv"
+	"fmt"
 )
 
 const (
 	_DB_NAME       = "data/beeblog.db"
 	_SQITE3_DRIVER = "sqlite3"
 )
+//=========================================USERTABLE============
+
 type User struct {
 	Id 				int64
-	Email			string
+	Email			string   `orm:"index"`
+	NickName        string
 	Passwd			string
 	CreatedTime		time.Time `orm:"index"`
+}
+func AddUser(email,passwd,nickName string) string{
+	//cid,err := strconv.ParseInt(id,10,64)
+
+	
+	o := orm.NewOrm()
+	user := &User{Email: email,Passwd: passwd,NickName: nickName,CreatedTime: time.Now()}
+	qs := o.QueryTable("user")
+	err := qs.Filter("email",email).One(user)
+	
+	if err == nil {
+		
+		return "exist"
+	}
+	_,err = o.Insert(user)
+	if err != nil {
+		fmt.Println("errrrrrrrrrrr")
+		return "servererr"
+	}
+	fmt.Println("==================")
+	
+	return ""
+}
+func GetUser(email,passwd string) ([]User,error){
+	o := orm.NewOrm()
+	
+	var users []User
+	var cond *orm.Condition
+	cond = orm.NewCondition()
+	cond = cond.And("email", email)
+	cond = cond.And("passwd", passwd)
+	var qs orm.QuerySeter
+	
+	qs = o.QueryTable("user").SetCond(cond)
+	_, err := qs.All(&users)
+	return users,err
 }
 type Category struct {
 	Id              int64

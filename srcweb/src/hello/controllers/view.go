@@ -1,8 +1,8 @@
 package controllers
 
 import (
+	"fmt"
 	"github.com/astaxie/beego"
-	//"fmt"
 )
 
 type ViewController struct {
@@ -10,7 +10,9 @@ type ViewController struct {
 }
 
 func (this *ViewController) Get() {
-	
+	user :=this.GetSession("user")
+	fmt.Println(user)
+	this.Data["user"] = user
 	this.TplNames = "view.html"
 }
 func (this *ViewController) Document() {

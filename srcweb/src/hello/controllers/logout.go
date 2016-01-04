@@ -10,6 +10,7 @@ type LogoutController struct {
 }
 
 func (this *LogoutController) Get() {
+	this.DelSession("user")
 	this.Redirect("/",301)
 	return
 }

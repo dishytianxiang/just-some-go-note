@@ -8,29 +8,35 @@ Youth means a temperamental predominance of courage over timidity, of the appeti
 
 Years may wrinkle the skin, but to give up enthusiasm wrinkles the soul. Worry, fear, self-distrust bows the heart and turns the spirit back to dust. </p>
 <h1 class = "page-header">REGISTER</h1>
-	<form class="form-horizontal">
+	<form class="form-horizontal" method = "post" action = "/register">
   <div class="form-group">
         <label for="inputPassword" class="col-sm-2 control-label">Email</label>
     <div class="col-sm-7">
-      <input type="text" class="form-control" id="inputPassword" placeholder="Password">
+      <input type="text" class="form-control" name = "email" id="inputPassword" placeholder="email">
     </div>
   </div>
   <div class="form-group">
     <label for="inputPassword" class="col-sm-2 control-label">Password</label>
     <div class="col-sm-7">
-      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+      <input type="password" class="form-control" name = "passwd" id="inputPassword" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="col-sm-2 control-label">nickName</label>
+    <div class="col-sm-7">
+      <input type="text" class="form-control" name = "nickName" id="inputPassword" placeholder="nickName">
     </div>
   </div>
   <div class="form-group">
     <label for="inputPassword" class="col-sm-2 control-label"> chinese name</label>
     <div class="col-sm-7">
-      <input type="text" class="form-control" id="inputPassword" placeholder="Password">
+      <input type="text" class="form-control" name = "chineseName" id="inputPassword" placeholder="chineseName">
     </div>
   </div>
   <div class="form-group">
     <label for="inputPassword" class="col-sm-2 control-label"> english name</label>
     <div class="col-sm-7">
-      <input type="text" class="form-control" id="inputPassword" placeholder="Password">
+      <input type="text" class="form-control" name = "englishName" id="inputPassword" placeholder="englishName">
     </div>
   </div>
   <div class="form-group">
@@ -58,6 +64,9 @@ Years may wrinkle the skin, but to give up enthusiasm wrinkles the soul. Worry, 
       <input type="file"  id="inputPassword" >
     </div>
   </div>
+  {{.content}}
+  <br/>
+  <input type = "submit"/>
 </form>
 		</div>
 {{template "footer"}}

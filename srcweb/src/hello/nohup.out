@@ -965,3 +965,368 @@ table `user` already exists, skip
 2015/12/23 21:25:27 [1;34m[router.go:854] [D] | GET        | /images/reg.gif                          | 1.49405ms        | notmatch   | [0m
 2015/12/23 22:37:09 [1;34m[router.go:854] [D] | HEAD       | /                                        | 46.895µs         | match      | /                                        | [0m
 2015/12/23 23:53:47 [1;34m[router.go:854] [D] | HEAD       | /                                        | 12.098149ms      | match      | /                                        | [0m
+table `category` already exists, skip
+table `topic` already exists, skip
+table `user` already exists, skip
+2015/12/28 13:38:37 [1;34m[asm_amd64.s:2232] [I] http server Running on :80[0m
+2015/12/28 13:38:37 [1;35m[asm_amd64.s:2232] [C] ListenAndServe: %!(EXTRA *net.OpError=listen tcp :80: bind: address already in use)[0m
+table `category` already exists, skip
+table `topic` already exists, skip
+table `user` already exists, skip
+2015/12/30 01:17:20 [1;34m[asm_amd64.s:2232] [I] http server Running on :80[0m
+[ORM] - 2015-12-30 01:18:42 - [Queries/default] - [  OK /    db.Query /     0.1ms] - [SELECT T0.`id`, T0.`email`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `dishy@qq.com`, `dishy`
+[{5 dishy@qq.com dishy 2015-12-29 17:15:58.598500371 +0000 UTC}]
+2015/12/30 01:18:42 [1;34m[router.go:854] [D] | POST       | /login                                   | 762.065µs        | match      | /login                                   | [0m
+2015/12/30 01:18:42 [1;34m[router.go:854] [D] | GET        | /view                                    | 9.343663ms       | match      | /view                                    | [0m
+2015/12/30 01:44:18 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.022404ms       | notmatch   | [0m
+2015/12/30 02:48:24 [1;34m[router.go:854] [D] | GET        | /                                        | 8.215104ms       | match      | /                                        | [0m
+2015/12/30 03:10:40 [1;34m[router.go:854] [D] | GET        | /                                        | 11.469869ms      | match      | /                                        | [0m
+2015/12/30 03:47:17 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 876.817µs        | notmatch   | [0m
+2015/12/30 04:01:15 [1;34m[router.go:854] [D] | GET        | /                                        | 8.636818ms       | match      | /                                        | [0m
+2015/12/30 04:09:02 [1;34m[router.go:854] [D] | HEAD       | /                                        | 41.741µs         | match      | /                                        | [0m
+2015/12/30 05:01:22 [1;34m[router.go:854] [D] | HEAD       | /                                        | 41.775µs         | match      | /                                        | [0m
+2015/12/30 05:47:55 [1;34m[router.go:854] [D] | GET        | /                                        | 10.241399ms      | match      | /                                        | [0m
+2015/12/30 05:47:57 [1;34m[router.go:854] [D] | GET        | /sitemap.xml                             | 1.035134ms       | notmatch   | [0m
+2015/12/30 06:46:21 [1;34m[router.go:854] [D] | HEAD       | /                                        | 46.34µs          | match      | /                                        | [0m
+2015/12/30 06:52:55 [1;34m[router.go:854] [D] | GET        | /psp/ps/                                 | 884.015µs        | notmatch   | [0m
+2015/12/30 06:53:15 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.155157ms       | notmatch   | [0m
+exit status 2
+table `category` already exists, skip
+table `topic` already exists, skip
+table `user` already exists, skip
+2015/12/31 00:23:47 [1;34m[asm_amd64.s:2232] [I] http server Running on :80[0m
+2015/12/31 00:23:55 [1;34m[router.go:854] [D] | GET        | /                                        | 10.641661ms      | match      | /                                        | [0m
+[ORM] - 2015-12-31 00:24:04 - [Queries/default] - [  OK /    db.Query /     0.2ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `dishy@qq.com`, `d`
+2015/12/31 00:24:04 [1;34m[router.go:854] [D] | POST       | /login                                   | 9.637788ms       | match      | /login                                   | [0m
+2015/12/31 00:26:41 [1;34m[router.go:854] [D] | GET        | /                                        | 8.734853ms       | match      | /                                        | [0m
+2015/12/31 01:07:34 [1;34m[router.go:854] [D] | GET        | /                                        | 8.517198ms       | match      | /                                        | [0m
+2015/12/31 01:07:34 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.125283ms       | notmatch   | [0m
+2015/12/31 02:00:07 [1;34m[router.go:854] [D] | HEAD       | /                                        | 250.383µs        | match      | /                                        | [0m
+2015/12/31 03:04:01 [1;34m[router.go:854] [D] | GET        | /                                        | 8.460039ms       | match      | /                                        | [0m
+2015/12/31 04:18:21 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 917.735µs        | notmatch   | [0m
+2015/12/31 04:21:55 [1;34m[router.go:854] [D] | HEAD       | /                                        | 100.1µs          | match      | /                                        | [0m
+2015/12/31 04:41:22 [1;34m[router.go:854] [D] | GET        | /                                        | 8.840311ms       | match      | /                                        | [0m
+2015/12/31 05:00:47 [1;34m[router.go:854] [D] | GET        | /                                        | 8.595815ms       | match      | /                                        | [0m
+2015/12/31 05:45:58 [1;34m[router.go:854] [D] | HEAD       | /                                        | 121.027µs        | match      | /                                        | [0m
+2015/12/31 08:03:00 [1;34m[router.go:854] [D] | GET        | /                                        | 8.785377ms       | match      | /                                        | [0m
+2015/12/31 08:03:00 [1;34m[router.go:854] [D] | GET        | /admin/images/menu-current-arrow.gif     | 1.428173ms       | notmatch   | [0m
+2015/12/31 08:03:00 [1;34m[router.go:854] [D] | GET        | /install/images/default/top1_r.jpg       | 1.21896ms        | notmatch   | [0m
+2015/12/31 08:03:00 [1;34m[router.go:854] [D] | GET        | /images/default/hd_a1.gif                | 1.137773ms       | notmatch   | [0m
+2015/12/31 08:03:00 [1;34m[router.go:854] [D] | GET        | /upload/200812/20081230023106860.gif     | 1.162575ms       | notmatch   | [0m
+2015/12/31 08:03:00 [1;34m[router.go:854] [D] | GET        | /Images/Mlogin/Bitmap02.gif              | 2.150853ms       | notmatch   | [0m
+2015/12/31 08:03:01 [1;34m[router.go:854] [D] | GET        | /theme/admin/images/upload.gif           | 1.084918ms       | notmatch   | [0m
+2015/12/31 08:03:01 [1;34m[router.go:854] [D] | GET        | /install/images/steptab.png              | 1.096675ms       | notmatch   | [0m
+2015/12/31 08:03:01 [1;34m[router.go:854] [D] | GET        | /lib/images/tip_layer.png                | 1.20452ms        | notmatch   | [0m
+2015/12/31 08:03:01 [1;34m[router.go:854] [D] | GET        | /admin/image/menu_h4.png                 | 1.167268ms       | notmatch   | [0m
+2015/12/31 08:03:02 [1;34m[router.go:854] [D] | GET        | /images/list_bg.png                      | 1.163801ms       | notmatch   | [0m
+2015/12/31 08:03:02 [1;34m[router.go:854] [D] | GET        | /data/admin/allowurl.txt                 | 1.066973ms       | notmatch   | [0m
+2015/12/31 08:03:02 [1;34m[router.go:854] [D] | GET        | /include/data/vdcode.jpg                 | 1.091925ms       | notmatch   | [0m
+2015/12/31 08:03:02 [1;34m[router.go:854] [D] | GET        | /images/loadinglit.gif                   | 1.156716ms       | notmatch   | [0m
+2015/12/31 08:03:02 [1;34m[router.go:854] [D] | GET        | /plus/img/wbg.gif                        | 1.12287ms        | notmatch   | [0m
+2015/12/31 08:03:03 [1;34m[router.go:854] [D] | GET        | /data/cache/index.htm                    | 2.151011ms       | notmatch   | [0m
+2015/12/31 08:03:03 [1;34m[router.go:854] [D] | GET        | /templets/default/images/ico-3.gif       | 1.017071ms       | notmatch   | [0m
+2015/12/31 08:03:03 [1;34m[router.go:854] [D] | GET        | /images/topbanner_bg.png                 | 1.086147ms       | notmatch   | [0m
+2015/12/31 08:03:03 [1;34m[router.go:854] [D] | GET        | /system/images/lnk/system.gif            | 1.059697ms       | notmatch   | [0m
+2015/12/31 08:03:03 [1;34m[router.go:854] [D] | GET        | /images/confirm_close.gif                | 1.129704ms       | notmatch   | [0m
+2015/12/31 08:03:04 [1;34m[router.go:854] [D] | GET        | /user/images/must.gif                    | 1.050636ms       | notmatch   | [0m
+2015/12/31 08:03:04 [1;34m[router.go:854] [D] | GET        | /template/images/li1.gif                 | 1.131507ms       | notmatch   | [0m
+2015/12/31 08:03:04 [1;34m[router.go:854] [D] | GET        | /images/page_code.png                    | 1.036648ms       | notmatch   | [0m
+2015/12/31 08:03:04 [1;34m[router.go:854] [D] | GET        | /editors/index.html                      | 1.201334ms       | notmatch   | [0m
+2015/12/31 08:03:05 [1;34m[router.go:854] [D] | GET        | /images/samples/4_small.jpg              | 1.100797ms       | notmatch   | [0m
+2015/12/31 08:03:07 [1;34m[router.go:854] [D] | GET        | /includes/templates/template_default/images/always-free-shipping.gif | 2.049473ms       | notmatch   | [0m
+2015/12/31 08:03:07 [1;34m[router.go:854] [D] | GET        | /includes/templates/template_default/buttons/english/button_tell_a_friend.gif | 1.644104ms       | notmatch   | [0m
+2015/12/31 08:03:07 [1;34m[router.go:854] [D] | GET        | /admin/images/login/index_hz02.gif       | 1.055886ms       | notmatch   | [0m
+2015/12/31 08:03:08 [1;34m[router.go:854] [D] | GET        | /admin/images/login/index_hz03.gif       | 1.389266ms       | notmatch   | [0m
+2015/12/31 08:03:08 [1;34m[router.go:854] [D] | GET        | /images/default/ico_loading3.gif         | 1.097804ms       | notmatch   | [0m
+2015/12/31 08:03:08 [1;34m[router.go:854] [D] | GET        | /a_d/install/data.sql                    | 1.063397ms       | notmatch   | [0m
+2015/12/31 08:03:08 [1;34m[router.go:854] [D] | GET        | /admin/images/cutimg/ccc.gif             | 1.544704ms       | notmatch   | [0m
+2015/12/31 08:03:08 [1;34m[router.go:854] [D] | GET        | /template/user/images/manage_r2_c18.jpg  | 1.061921ms       | notmatch   | [0m
+2015/12/31 08:03:09 [1;34m[router.go:854] [D] | GET        | /admin/images/admintitlebg.gif           | 1.052239ms       | notmatch   | [0m
+2015/12/31 08:03:09 [1;34m[router.go:854] [D] | GET        | /images/gengtie.jpg                      | 1.120889ms       | notmatch   | [0m
+2015/12/31 08:03:09 [1;34m[router.go:854] [D] | GET        | /.htaccess                               | 2.220881ms       | notmatch   | [0m
+2015/12/31 08:03:09 [1;34m[router.go:854] [D] | GET        | /README.txt                              | 1.062697ms       | notmatch   | [0m
+2015/12/31 08:03:09 [1;34m[router.go:854] [D] | GET        | /themes/README.txt                       | 1.035314ms       | notmatch   | [0m
+2015/12/31 08:03:10 [1;34m[router.go:854] [D] | GET        | /Admin/Images/icon_lpdhjl.png            | 1.063705ms       | notmatch   | [0m
+2015/12/31 08:03:10 [1;34m[router.go:854] [D] | GET        | /store/Images/hdfk.gif                   | 990.469µs        | notmatch   | [0m
+2015/12/31 08:03:10 [1;34m[router.go:854] [D] | GET        | /skins/doccms_model_1/images/bg_contact_a.png | 1.209432ms       | notmatch   | [0m
+2015/12/31 08:03:10 [1;34m[router.go:854] [D] | GET        | /admini/images/s_managehtml/icon_refresh.png | 1.080579ms       | notmatch   | [0m
+2015/12/31 08:03:10 [1;34m[router.go:854] [D] | GET        | /Admin/Images/Icon-Nav-Close-over.gif    | 1.548192ms       | notmatch   | [0m
+2015/12/31 08:03:11 [1;34m[router.go:854] [D] | GET        | /images/menu_righttop.gif                | 1.102235ms       | notmatch   | [0m
+2015/12/31 08:03:11 [1;34m[router.go:854] [D] | GET        | /face/5.gif                              | 2.172868ms       | notmatch   | [0m
+2015/12/31 08:03:11 [1;34m[router.go:854] [D] | GET        | /xin/btn_regis.gif                       | 1.045239ms       | notmatch   | [0m
+2015/12/31 08:03:11 [1;34m[router.go:854] [D] | GET        | /admin/Tpl/default/ThemeFiles/Images/login/bg-interior-tile-drk.jpg | 1.259588ms       | notmatch   | [0m
+2015/12/31 08:03:11 [1;34m[router.go:854] [D] | GET        | /app/Tpl/lashou3/Public/images/adbg_t.png | 1.134538ms       | notmatch   | [0m
+2015/12/31 08:03:12 [1;34m[router.go:854] [D] | GET        | /Public/img_loading.gif                  | 1.133348ms       | notmatch   | [0m
+2015/12/31 08:03:12 [1;34m[router.go:854] [D] | GET        | /system/images/tab_17.gif                | 1.562185ms       | notmatch   | [0m
+2015/12/31 08:03:12 [1;34m[router.go:854] [D] | GET        | /admin/images/tab_17.gif                 | 1.047253ms       | notmatch   | [0m
+2015/12/31 08:03:12 [1;34m[router.go:854] [D] | GET        | /admin/images/top_tt_bg.gif              | 1.117169ms       | notmatch   | [0m
+2015/12/31 08:03:13 [1;34m[router.go:854] [D] | GET        | /m/_/images/fileicon/jpg.png             | 1.607232ms       | notmatch   | [0m
+2015/12/31 08:03:13 [1;34m[router.go:854] [D] | GET        | /inc_img/vote/vote2_1.gif                | 1.101923ms       | notmatch   | [0m
+2015/12/31 08:03:13 [1;34m[router.go:854] [D] | GET        | /admin/images/login/login_submit.gif     | 2.068916ms       | notmatch   | [0m
+2015/12/31 08:03:13 [1;34m[router.go:854] [D] | GET        | /images/webZx_bg.jpg                     | 1.300558ms       | notmatch   | [0m
+2015/12/31 08:03:13 [1;34m[router.go:854] [D] | GET        | /skins/images/ico_catalogue.png          | 1.206894ms       | notmatch   | [0m
+2015/12/31 08:03:14 [1;34m[router.go:854] [D] | GET        | /console/images/bg11.jpg                 | 999.313µs        | notmatch   | [0m
+2015/12/31 08:03:14 [1;34m[router.go:854] [D] | GET        | /console/images/login.gif                | 1.068308ms       | notmatch   | [0m
+2015/12/31 08:03:14 [1;34m[router.go:854] [D] | GET        | /images-global/zoom/zoom-caption-fill.png | 1.091579ms       | notmatch   | [0m
+2015/12/31 08:03:15 [1;34m[router.go:854] [D] | GET        | /admin/images/netgather_com.gif          | 1.079794ms       | notmatch   | [0m
+2015/12/31 08:03:15 [1;34m[router.go:854] [D] | GET        | /cn/images/banner_page_bg.gif            | 1.424092ms       | notmatch   | [0m
+2015/12/31 08:03:15 [1;34m[router.go:854] [D] | GET        | /themes/forum/default/images/forum/lock.gif | 2.259898ms       | notmatch   | [0m
+2015/12/31 08:03:16 [1;34m[router.go:854] [D] | GET        | /themes/space/default/images/fans_follow.png | 1.050973ms       | notmatch   | [0m
+2015/12/31 08:03:16 [1;34m[router.go:854] [D] | GET        | /themes/site/default/images/logo.png     | 1.066021ms       | notmatch   | [0m
+2015/12/31 08:03:16 [1;34m[router.go:854] [D] | GET        | /js/pw_ajax.js                           | 1.164463ms       | notmatch   | [0m
+2015/12/31 08:03:16 [1;34m[router.go:854] [D] | GET        | /licence.txt                             | 1.170846ms       | notmatch   | [0m
+2015/12/31 08:03:17 [1;34m[router.go:854] [D] | GET        | /include/image/dui_r.gif                 | 1.072049ms       | notmatch   | [0m
+2015/12/31 08:03:17 [1;34m[router.go:854] [D] | GET        | /template/default/index/images/anvico.png | 1.421031ms       | notmatch   | [0m
+2015/12/31 08:03:17 [1;34m[router.go:854] [D] | GET        | /skin/default/image/add_job.gif          | 1.089569ms       | notmatch   | [0m
+2015/12/31 08:03:17 [1;34m[router.go:854] [D] | GET        | /inc/images/captcha_bg.jpg               | 1.114602ms       | notmatch   | [0m
+2015/12/31 08:03:17 [1;34m[router.go:854] [D] | GET        | /inc/templates/manage/images/cross_grey_small.png | 1.047733ms       | notmatch   | [0m
+2015/12/31 08:03:18 [1;34m[router.go:854] [D] | GET        | /views/images/admin/closex.gif           | 2.117092ms       | notmatch   | [0m
+2015/12/31 08:03:18 [1;34m[router.go:854] [D] | GET        | /template/default/images/gbook_btn_bg.gif | 1.222428ms       | notmatch   | [0m
+2015/12/31 08:03:18 [1;34m[router.go:854] [D] | GET        | /admin/views/images/admindex_itembg.gif  | 1.059076ms       | notmatch   | [0m
+2015/12/31 08:03:18 [1;34m[router.go:854] [D] | GET        | /content/templates/default/images/bg_cal_today.gif | 1.100383ms       | notmatch   | [0m
+2015/12/31 08:03:18 [1;34m[router.go:854] [D] | GET        | /admin/templates/met/images/logosmall.gif | 1.075706ms       | notmatch   | [0m
+2015/12/31 08:03:19 [1;34m[router.go:854] [D] | GET        | /job/templates/met/css/style.css         | 1.136125ms       | notmatch   | [0m
+2015/12/31 08:03:19 [1;34m[router.go:854] [D] | GET        | /wap/templates/met/images/listico.gif    | 1.091422ms       | notmatch   | [0m
+2015/12/31 08:03:19 [1;34m[router.go:854] [D] | GET        | /images/receipt/dly_yto.jpg              | 1.026489ms       | notmatch   | [0m
+2015/12/31 08:03:19 [1;34m[router.go:854] [D] | GET        | /images/wap_logo.png                     | 1.105952ms       | notmatch   | [0m
+2015/12/31 08:03:20 [1;34m[router.go:854] [D] | GET        | /admin/ecshopfiles.md5                   | 2.212463ms       | notmatch   | [0m
+2015/12/31 08:03:20 [1;34m[router.go:854] [D] | GET        | /admin/help/zh_cn/database.xml           | 1.746512ms       | notmatch   | [0m
+2015/12/31 08:03:20 [1;34m[router.go:854] [D] | GET        | /Images/estar.gif                        | 1.395472ms       | notmatch   | [0m
+2015/12/31 08:03:20 [1;34m[router.go:854] [D] | GET        | /Template/Default/Layout/1s2s2/ico.gif   | 1.233972ms       | notmatch   | [0m
+2015/12/31 08:03:21 [1;34m[router.go:854] [D] | GET        | /t3/style/css/common/card.css            | 1.151044ms       | notmatch   | [0m
+2015/12/31 08:03:21 [1;34m[router.go:854] [D] | GET        | /images/admina/logo.png                  | 1.076282ms       | notmatch   | [0m
+2015/12/31 08:03:21 [1;34m[router.go:854] [D] | GET        | /images/admina/sitmap0.png               | 1.037689ms       | notmatch   | [0m
+2015/12/31 08:03:21 [1;34m[router.go:854] [D] | GET        | /e/tool/feedback/temp/test.txt           | 1.06528ms        | notmatch   | [0m
+2015/12/31 08:03:21 [1;34m[router.go:854] [D] | GET        | /e/data/ecmseditor/images/blank.html     | 1.062334ms       | notmatch   | [0m
+2015/12/31 08:03:22 [1;34m[router.go:854] [D] | GET        | /siteserver/pic/company/logo.gif         | 1.107264ms       | notmatch   | [0m
+2015/12/31 08:03:22 [1;34m[router.go:854] [D] | GET        | /system/blue_point.png                   | 2.171453ms       | notmatch   | [0m
+2015/12/31 08:03:22 [1;34m[router.go:854] [D] | GET        | /admin/Tpl/default/Common/images/blank.gif | 1.132501ms       | notmatch   | [0m
+2015/12/31 08:03:23 [1;34m[router.go:854] [D] | GET        | /script/valid_formdata.js                | 1.28047ms        | notmatch   | [0m
+2015/12/31 08:03:24 [1;34m[router.go:854] [D] | GET        | /images/ad_location_middle_center1.jpg   | 1.115709ms       | notmatch   | [0m
+2015/12/31 08:03:24 [1;34m[router.go:854] [D] | GET        | /theme/t1/themebg_preview.jpg            | 1.332031ms       | notmatch   | [0m
+2015/12/31 08:03:24 [1;34m[router.go:854] [D] | GET        | /images/table_bg.jpg                     | 1.04367ms        | notmatch   | [0m
+2015/12/31 08:03:24 [1;34m[router.go:854] [D] | GET        | /images/ext/midi.gif                     | 1.073968ms       | notmatch   | [0m
+2015/12/31 08:03:24 [1;34m[router.go:854] [D] | GET        | /data/setmealimg/3.gif                   | 1.102573ms       | notmatch   | [0m
+2015/12/31 08:03:25 [1;34m[router.go:854] [D] | GET        | /admin/images/admin_submit.jpg           | 2.519634ms       | notmatch   | [0m
+2015/12/31 08:03:25 [1;34m[router.go:854] [D] | GET        | /include/payment/logo/remittance.gif     | 1.138378ms       | notmatch   | [0m
+2015/12/31 08:03:25 [1;34m[router.go:854] [D] | GET        | /views/default/skin/blue/images/front/buying.gif | 1.060817ms       | notmatch   | [0m
+2015/12/31 08:03:25 [1;34m[router.go:854] [D] | GET        | /install/images/guide_1.gif              | 1.262564ms       | notmatch   | [0m
+2015/12/31 08:03:26 [1;34m[router.go:854] [D] | GET        | /upload/2011/11/30/20111130113535527.jpg | 987.298µs        | notmatch   | [0m
+2015/12/31 08:03:26 [1;34m[router.go:854] [D] | GET        | /plus/weather/icon/a_12.gif              | 1.13525ms        | notmatch   | [0m
+2015/12/31 08:03:26 [1;34m[router.go:854] [D] | GET        | /question/images/face/images/ico_face_arrow.gif | 1.169206ms       | notmatch   | [0m
+2015/12/31 08:03:26 [1;34m[router.go:854] [D] | GET        | /wp-includes/images/icon-pointer-flag.png | 1.337703ms       | notmatch   | [0m
+2015/12/31 08:03:26 [1;34m[router.go:854] [D] | GET        | /wp-admin/images/yes.png                 | 1.086563ms       | notmatch   | [0m
+2015/12/31 08:03:27 [1;34m[router.go:854] [D] | GET        | /wp-includes/js/swfobject.js             | 1.094085ms       | notmatch   | [0m
+2015/12/31 08:03:27 [1;34m[router.go:854] [D] | GET        | /base/admin/images/linksup.gif           | 2.111196ms       | notmatch   | [0m
+2015/12/31 08:03:27 [1;34m[router.go:854] [D] | GET        | /base/templates/images/2.png             | 1.579334ms       | notmatch   | [0m
+2015/12/31 08:03:27 [1;34m[router.go:854] [D] | GET        | /zb_users/AVATAR/0.png                   | 1.107445ms       | notmatch   | [0m
+2015/12/31 08:03:27 [1;34m[router.go:854] [D] | GET        | /zb_users/avatar/0.png                   | 1.028364ms       | notmatch   | [0m
+2015/12/31 08:03:28 [1;34m[router.go:854] [D] | GET        | /admin/skins/images/ads_set3.gif         | 1.096292ms       | notmatch   | [0m
+2015/12/31 08:03:28 [1;34m[router.go:854] [D] | GET        | /images/forum_readme.gif                 | 1.536051ms       | notmatch   | [0m
+2015/12/31 08:03:28 [1;34m[router.go:854] [D] | GET        | /img/images/commentLoad.gif              | 1.495291ms       | notmatch   | [0m
+2015/12/31 08:03:28 [1;34m[router.go:854] [D] | GET        | /install/images/bg-cmstop.jpg            | 1.518847ms       | notmatch   | [0m
+2015/12/31 08:03:28 [1;34m[router.go:854] [D] | GET        | /admin/images/loadingAnimation.gif       | 1.389355ms       | notmatch   | [0m
+2015/12/31 08:03:29 [1;34m[router.go:854] [D] | GET        | /data/adtool/theme/d2.jpg                | 1.158909ms       | notmatch   | [0m
+2015/12/31 08:03:29 [1;34m[router.go:854] [D] | GET        | /images/wp-background-preview-bg.gif     | 2.27806ms        | notmatch   | [0m
+2015/12/31 08:03:29 [1;34m[router.go:854] [D] | GET        | /install/images/r.gif                    | 1.47611ms        | notmatch   | [0m
+2015/12/31 08:03:29 [1;34m[router.go:854] [D] | GET        | /images/sampledata/fruitshop/fruits.gif  | 1.02792ms        | notmatch   | [0m
+2015/12/31 08:03:29 [1;34m[router.go:854] [D] | GET        | /images/banners/shop-ad-books.jpg        | 1.075274ms       | notmatch   | [0m
+2015/12/31 08:03:30 [1;34m[router.go:854] [D] | GET        | /components/com_mailto/views/sent/metadata.xml | 1.150802ms       | notmatch   | [0m
+2015/12/31 08:03:30 [1;34m[router.go:854] [D] | GET        | /Images/arrow_04.gif                     | 1.20264ms        | notmatch   | [0m
+2015/12/31 08:03:30 [1;34m[router.go:854] [D] | GET        | /Images/bg_bodyer_page.gif               | 1.058686ms       | notmatch   | [0m
+2015/12/31 08:03:32 [1;34m[router.go:854] [D] | GET        | /Inc/NoSqlHack.Asp                       | 1.084494ms       | notmatch   | [0m
+2015/12/31 08:03:33 [1;34m[router.go:854] [D] | GET        | /Script/Html.js                          | 1.607808ms       | notmatch   | [0m
+2015/12/31 08:03:33 [1;34m[router.go:854] [D] | GET        | /e/install/images/bg_1.gif               | 1.22594ms        | notmatch   | [0m
+2015/12/31 08:03:33 [1;34m[router.go:854] [D] | GET        | /e/install/images/logo.gif               | 2.124363ms       | notmatch   | [0m
+2015/12/31 08:03:33 [1;34m[router.go:854] [D] | GET        | /e/js/lang/zh-cn.js                      | 1.293044ms       | notmatch   | [0m
+2015/12/31 08:03:33 [1;34m[router.go:854] [D] | GET        | /e/js/zh-cn/lang.js                      | 1.075809ms       | notmatch   | [0m
+2015/12/31 08:03:34 [1;34m[router.go:854] [D] | GET        | /e/master/images/login_r1_c1.jpg         | 1.070206ms       | notmatch   | [0m
+2015/12/31 08:03:34 [1;34m[router.go:854] [D] | GET        | /admin/Images/del.gif                    | 1.158312ms       | notmatch   | [0m
+2015/12/31 08:03:34 [1;34m[router.go:854] [D] | GET        | /Admin/Include/version.xml               | 1.081453ms       | notmatch   | [0m
+2015/12/31 08:03:34 [1;34m[router.go:854] [D] | GET        | /KS_Inc/ajax.js                          | 1.165389ms       | notmatch   | [0m
+2015/12/31 08:03:35 [1;34m[router.go:854] [D] | GET        | /KS_Inc/common.js                        | 1.130964ms       | notmatch   | [0m
+2015/12/31 08:03:35 [1;34m[router.go:854] [D] | GET        | /template/skin6/cn/images/ico_zlxz.gif   | 1.080461ms       | notmatch   | [0m
+2015/12/31 08:03:35 [1;34m[router.go:854] [D] | GET        | /inc/image/bj.gif                        | 1.050224ms       | notmatch   | [0m
+2015/12/31 08:03:35 [1;34m[router.go:854] [D] | GET        | /install/style.css                       | 1.425913ms       | notmatch   | [0m
+2015/12/31 08:03:35 [1;34m[router.go:854] [D] | GET        | /admin/images/arrow_right_8x8.png        | 2.26597ms        | notmatch   | [0m
+2015/12/31 08:03:36 [1;34m[router.go:854] [D] | GET        | /image/admin/add.gif                     | 1.091629ms       | notmatch   | [0m
+2015/12/31 08:03:36 [1;34m[router.go:854] [D] | GET        | /image/cflag/ad.gif                      | 1.082763ms       | notmatch   | [0m
+2015/12/31 08:03:36 [1;34m[router.go:854] [D] | GET        | /Admin/images/houtaijs_16.jpg            | 1.325046ms       | notmatch   | [0m
+2015/12/31 08:03:36 [1;34m[router.go:854] [D] | GET        | /Templates/master/default/images/ddwc_06.gif | 1.499001ms       | notmatch   | [0m
+2015/12/31 08:03:39 [1;34m[router.go:854] [D] | GET        | /system/phpqrcode/cache/frame_6.png      | 1.12377ms        | notmatch   | [0m
+2015/12/31 08:03:39 [1;34m[router.go:854] [D] | GET        | /public/attachment/201011/4cdde85a27105.gif | 1.059019ms       | notmatch   | [0m
+2015/12/31 08:03:39 [1;34m[router.go:854] [D] | GET        | /product/waterimage/200x200.png          | 1.089989ms       | notmatch   | [0m
+2015/12/31 08:03:39 [1;34m[router.go:854] [D] | GET        | /install/images/header-corners.png       | 1.115184ms       | notmatch   | [0m
+2015/12/31 08:03:39 [1;34m[router.go:854] [D] | GET        | /images/gif_47_106.gif                   | 1.076213ms       | notmatch   | [0m
+2015/12/31 08:03:40 [1;34m[router.go:854] [D] | GET        | /zb_users/plugin/UEditor/themes/default/images/highlighted.gif | 2.27884ms        | notmatch   | [0m
+2015/12/31 08:03:40 [1;34m[router.go:854] [D] | GET        | /media/xmlconnect/system/ok.gif          | 1.019921ms       | notmatch   | [0m
+2015/12/31 08:03:40 [1;34m[router.go:854] [D] | GET        | /LICENSE.txt                             | 1.030675ms       | notmatch   | [0m
+2015/12/31 08:03:40 [1;34m[router.go:854] [D] | GET        | /skin/frontend/base/default/favicon.ico  | 1.143517ms       | notmatch   | [0m
+2015/12/31 08:03:40 [1;33m[staticfile.go:61] [W] Can't find the file: static/ayacms.gif stat static/ayacms.gif: no such file or directory [0m
+2015/12/31 08:03:41 [1;33m[staticfile.go:61] [W] Can't find the file: static/none.gif stat static/none.gif: no such file or directory [0m
+2015/12/31 08:03:41 [1;34m[router.go:854] [D] | GET        | /bbs/css/images/announ.gif               | 1.155641ms       | notmatch   | [0m
+2015/12/31 08:03:41 [1;34m[router.go:854] [D] | GET        | /bbs/css/images/avatar.gif               | 1.483206ms       | notmatch   | [0m
+2015/12/31 08:03:41 [1;34m[router.go:854] [D] | GET        | /celive/admin/live/loading.gif           | 1.184926ms       | notmatch   | [0m
+2015/12/31 08:03:41 [1;34m[router.go:854] [D] | GET        | /celive/js/images/btn.gif                | 1.198661ms       | notmatch   | [0m
+2015/12/31 08:03:42 [1;34m[router.go:854] [D] | GET        | /celive/templates/default/images/admin/yes.gif | 1.063949ms       | notmatch   | [0m
+2015/12/31 08:03:42 [1;34m[router.go:854] [D] | GET        | /zb_users/PLUGIN/Gravatar/Logo.png       | 1.064766ms       | notmatch   | [0m
+2015/12/31 08:03:42 [1;34m[router.go:854] [D] | GET        | /images/qq/qqkf2/Kf_bg03_03.gif          | 2.323486ms       | notmatch   | [0m
+2015/12/31 08:03:42 [1;34m[router.go:854] [D] | GET        | /js/close.gif                            | 1.009761ms       | notmatch   | [0m
+2015/12/31 08:03:45 [1;34m[router.go:854] [D] | GET        | /dayrui/statics/default/images/shop/login.gif | 1.093179ms       | notmatch   | [0m
+2015/12/31 08:03:45 [1;34m[router.go:854] [D] | GET        | /dayrui/statics/default/images/touming.png | 1.037683ms       | notmatch   | [0m
+2015/12/31 08:03:45 [1;34m[router.go:854] [D] | GET        | /extensions/calendar/img/nav-left.gif    | 1.178471ms       | notmatch   | [0m
+2015/12/31 08:03:45 [1;34m[router.go:854] [D] | GET        | /extensions/kindeditor/plugins/emoticons/images/118.gif | 1.079414ms       | notmatch   | [0m
+2015/12/31 08:03:45 [1;34m[router.go:854] [D] | GET        | /style/default/hdwiki.css                | 1.070818ms       | notmatch   | [0m
+2015/12/31 08:03:46 [1;34m[router.go:854] [D] | GET        | /style/default/fujian_top_bg.jpg         | 1.040206ms       | notmatch   | [0m
+2015/12/31 08:03:46 [1;34m[router.go:854] [D] | GET        | /style/default/index_login_bg.jpg        | 1.517836ms       | notmatch   | [0m
+2015/12/31 08:03:46 [1;34m[router.go:854] [D] | GET        | /style/default/style/bg_title.jpg        | 1.079187ms       | notmatch   | [0m
+2015/12/31 08:03:46 [1;34m[router.go:854] [D] | GET        | /style/default/login_bg.jpg              | 2.182288ms       | notmatch   | [0m
+2015/12/31 08:03:46 [1;34m[router.go:854] [D] | GET        | /CN/nite/images/title.gif                | 1.038713ms       | notmatch   | [0m
+2015/12/31 08:03:49 [1;34m[router.go:854] [D] | GET        | /App_Themes/AdminDefaultTheme/DateTheme/bgteuw.jpg | 1.326845ms       | notmatch   | [0m
+2015/12/31 08:03:49 [1;34m[router.go:854] [D] | GET        | /Images/Microblog/dialog_rt.gif          | 1.477732ms       | notmatch   | [0m
+2015/12/31 08:03:49 [1;34m[router.go:854] [D] | GET        | /admin/Images/Login_tit.gif              | 1.063547ms       | notmatch   | [0m
+2015/12/31 08:03:49 [1;34m[router.go:854] [D] | GET        | /admin/Images/Sort_Folder_Close.gif      | 1.07975ms        | notmatch   | [0m
+2015/12/31 08:03:50 [1;34m[router.go:854] [D] | GET        | /admin/Limages/left-corners.png          | 1.528095ms       | notmatch   | [0m
+2015/12/31 08:03:50 [1;34m[router.go:854] [D] | GET        | /admin/images/li_4.gif                   | 972.238µs        | notmatch   | [0m
+2015/12/31 08:03:50 [1;34m[router.go:854] [D] | GET        | /images/default/listico.gif              | 1.079951ms       | notmatch   | [0m
+2015/12/31 08:03:50 [1;34m[router.go:854] [D] | GET        | /images/default/images/button_plain_hover.png | 1.066993ms       | notmatch   | [0m
+2015/12/31 08:03:50 [1;34m[router.go:854] [D] | GET        | /admin/tpl/images/welcome_h1.gif         | 1.156338ms       | notmatch   | [0m
+2015/12/31 08:03:51 [1;34m[router.go:854] [D] | GET        | /admin/images/bg-pay-return-success.gif  | 2.821279ms       | notmatch   | [0m
+2015/12/31 08:03:51 [1;34m[router.go:854] [D] | GET        | /template/default/images/ad_scroll_forward.png | 1.074681ms       | notmatch   | [0m
+2015/12/31 08:03:51 [1;34m[router.go:854] [D] | GET        | /adfile/ad9.js                           | 1.07976ms        | notmatch   | [0m
+2015/12/31 08:03:51 [1;34m[router.go:854] [D] | GET        | /admin/images/login_06.jpg               | 1.045974ms       | notmatch   | [0m
+2015/12/31 08:03:52 [1;34m[router.go:854] [D] | GET        | /images/common/online_member.gif         | 1.028423ms       | notmatch   | [0m
+2015/12/31 08:03:52 [1;34m[router.go:854] [D] | GET        | /images/default/reply.gif                | 1.068831ms       | notmatch   | [0m
+2015/12/31 08:03:52 [1;33m[staticfile.go:61] [W] Can't find the file: static/image/admincp/ajax_loader.gif stat static/image/admincp/ajax_loader.gif: no such file or directory [0m
+2015/12/31 08:03:52 [1;34m[router.go:854] [D] | GET        | /templates/uchome/images/title.gif       | 1.062731ms       | notmatch   | [0m
+2015/12/31 08:03:53 [1;34m[router.go:854] [D] | GET        | /extmail/default/images/lastpg.d.gif     | 1.765958ms       | notmatch   | [0m
+2015/12/31 08:03:53 [1;34m[router.go:854] [D] | GET        | /adminsoft/templates/images/login_line.png | 1.117659ms       | notmatch   | [0m
+2015/12/31 08:03:53 [1;34m[router.go:854] [D] | GET        | /adminsoft/templates/images/login_title.png | 1.036147ms       | notmatch   | [0m
+2015/12/31 08:03:53 [1;34m[router.go:854] [D] | GET        | /public/plug/im/im_bg.png                | 2.099444ms       | notmatch   | [0m
+2015/12/31 08:03:53 [1;34m[router.go:854] [D] | GET        | /images/admin/logo.gif                   | 1.056247ms       | notmatch   | [0m
+2015/12/31 08:03:54 [1;34m[router.go:854] [D] | GET        | /images/admin/sprites.png                | 1.040796ms       | notmatch   | [0m
+2015/12/31 08:03:54 [1;34m[router.go:854] [D] | GET        | /ACT_inc/ItemBg.gif                      | 1.079404ms       | notmatch   | [0m
+2015/12/31 08:03:54 [1;34m[router.go:854] [D] | GET        | /ACT_inc/share/minusbottom.gif           | 1.130513ms       | notmatch   | [0m
+2015/12/31 08:03:56 [1;34m[router.go:854] [D] | GET        | /images/act_1.gif                        | 1.07295ms        | notmatch   | [0m
+2015/12/31 08:03:57 [1;34m[router.go:854] [D] | GET        | /images/reg.gif                          | 1.050027ms       | notmatch   | [0m
+2015/12/31 09:15:18 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 924.744µs        | notmatch   | [0m
+2015/12/31 09:20:10 [1;34m[router.go:854] [D] | HEAD       | /                                        | 102.41µs         | match      | /                                        | [0m
+2015/12/31 10:14:24 [1;34m[router.go:854] [D] | GET        | /                                        | 9.222712ms       | match      | /                                        | [0m
+2015/12/31 10:22:41 [1;34m[router.go:854] [D] | GET        | /                                        | 11.151608ms      | match      | /                                        | [0m
+2015/12/31 12:50:53 [1;34m[router.go:854] [D] | GET        | /                                        | 9.891652ms       | match      | /                                        | [0m
+2015/12/31 16:15:10 [1;34m[router.go:854] [D] | GET        | /                                        | 8.448195ms       | match      | /                                        | [0m
+2015/12/31 19:17:48 [1;34m[router.go:854] [D] | GET        | /                                        | 8.896231ms       | match      | /                                        | [0m
+2015/12/31 21:39:56 [1;34m[router.go:854] [D] | GET        | /                                        | 9.215918ms       | match      | /                                        | [0m
+2015/12/31 21:50:21 [1;34m[router.go:854] [D] | HEAD       | /                                        | 128.866µs        | match      | /                                        | [0m
+2015/12/31 23:22:20 [1;34m[router.go:854] [D] | HEAD       | /                                        | 126.602µs        | match      | /                                        | [0m
+2015/12/31 23:45:58 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 931.436µs        | notmatch   | [0m
+2016/01/01 01:07:14 [1;34m[router.go:854] [D] | HEAD       | /                                        | 123.68µs         | match      | /                                        | [0m
+2016/01/01 02:19:25 [1;34m[router.go:854] [D] | GET        | /                                        | 9.183678ms       | match      | /                                        | [0m
+2016/01/01 02:43:18 [1;34m[router.go:854] [D] | GET        | /                                        | 9.372452ms       | match      | /                                        | [0m
+2016/01/01 03:03:30 [1;34m[router.go:854] [D] | GET        | /                                        | 8.378603ms       | match      | /                                        | [0m
+2016/01/01 04:34:44 [1;34m[router.go:854] [D] | GET        | /tmUnblock.cgi                           | 956.997µs        | notmatch   | [0m
+2016/01/01 04:34:45 [1;34m[router.go:854] [D] | GET        | /                                        | 10.791464ms      | match      | /                                        | [0m
+2016/01/01 05:23:35 [1;34m[router.go:854] [D] | GET        | /                                        | 9.562934ms       | match      | /                                        | [0m
+2016/01/01 05:26:20 [1;34m[router.go:854] [D] | HEAD       | /                                        | 101.555µs        | match      | /                                        | [0m
+2016/01/01 09:46:08 [1;34m[router.go:854] [D] | CONNECT    |                                          | 914.78µs         | notmatch   | [0m
+2016/01/01 09:48:42 [1;34m[router.go:854] [D] | HEAD       | /                                        | 101.376µs        | match      | /                                        | [0m
+2016/01/01 10:38:53 [1;34m[router.go:854] [D] | CONNECT    |                                          | 947.877µs        | notmatch   | [0m
+2016/01/01 11:03:54 [1;34m[router.go:854] [D] | HEAD       | /                                        | 123.075µs        | match      | /                                        | [0m
+2016/01/01 12:18:00 [1;34m[router.go:854] [D] | HEAD       | /                                        | 122.761µs        | match      | /                                        | [0m
+2016/01/01 13:07:41 [1;34m[router.go:854] [D] | GET        | /                                        | 10.434304ms      | match      | /                                        | [0m
+2016/01/01 15:36:23 [1;34m[router.go:854] [D] | HEAD       | /                                        | 122.428µs        | match      | /                                        | [0m
+2016/01/01 16:06:02 [1;34m[router.go:854] [D] | GET        | /server-status                           | 1.311386ms       | notmatch   | [0m
+2016/01/01 16:15:29 [1;34m[router.go:854] [D] | GET        | /                                        | 9.85685ms        | match      | /                                        | [0m
+2016/01/01 18:04:33 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 976.711µs        | notmatch   | [0m
+2016/01/01 19:52:22 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.070798ms       | notmatch   | [0m
+2016/01/01 20:56:57 [1;34m[router.go:854] [D] | GET        | /80                                      | 911.958µs        | notmatch   | [0m
+2016/01/01 20:57:02 [1;34m[router.go:854] [D] | GET        | /80                                      | 1.095226ms       | notmatch   | [0m
+2016/01/01 21:42:05 [1;34m[router.go:854] [D] | HEAD       | /                                        | 129.142µs        | match      | /                                        | [0m
+2016/01/01 21:53:10 [1;34m[router.go:854] [D] | GET        | /                                        | 9.036428ms       | match      | /                                        | [0m
+2016/01/01 23:03:51 [1;34m[router.go:854] [D] | GET        | /server-status                           | 986.548µs        | notmatch   | [0m
+2016/01/01 23:40:48 [1;34m[router.go:854] [D] | HEAD       | /                                        | 122.179µs        | match      | /                                        | [0m
+2016/01/01 23:52:37 [1;34m[router.go:854] [D] | GET        | /                                        | 9.168967ms       | match      | /                                        | [0m
+2016/01/02 01:05:41 [1;34m[router.go:854] [D] | GET        | /server-status                           | 1.010086ms       | notmatch   | [0m
+2016/01/02 01:06:40 [1;34m[router.go:854] [D] | HEAD       | /                                        | 97.631µs         | match      | /                                        | [0m
+2016/01/02 02:58:56 [1;34m[router.go:854] [D] | GET        | /server-status                           | 935.222µs        | notmatch   | [0m
+2016/01/02 03:04:10 [1;34m[router.go:854] [D] | GET        | /                                        | 8.539031ms       | match      | /                                        | [0m
+2016/01/02 03:53:07 [1;34m[router.go:854] [D] | GET        | /                                        | 9.014068ms       | match      | /                                        | [0m
+2016/01/02 04:46:29 [1;34m[router.go:854] [D] | HEAD       | /                                        | 151.501µs        | match      | /                                        | [0m
+2016/01/02 04:48:13 [1;34m[router.go:854] [D] | GET        | /server-status                           | 940.784µs        | notmatch   | [0m
+2016/01/02 05:17:14 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 1.463014ms       | notmatch   | [0m
+2016/01/02 05:30:21 [1;34m[router.go:854] [D] | GET        | /server-status                           | 960.959µs        | notmatch   | [0m
+2016/01/02 06:23:16 [1;34m[router.go:854] [D] | GET        | /                                        | 8.772061ms       | match      | /                                        | [0m
+2016/01/02 06:25:10 [1;34m[router.go:854] [D] | GET        | /cgi-bin/common/attr                     | 1.296314ms       | notmatch   | [0m
+2016/01/02 08:15:15 [1;34m[router.go:854] [D] | GET        | /server-status                           | 960.239µs        | notmatch   | [0m
+2016/01/02 09:05:57 [1;34m[router.go:854] [D] | GET        | /server-status                           | 977.4µs          | notmatch   | [0m
+2016/01/02 09:45:39 [1;34m[router.go:854] [D] | GET        | /                                        | 9.026778ms       | match      | /                                        | [0m
+2016/01/02 10:36:16 [1;34m[router.go:854] [D] | GET        | /cgi-bin/common/attr                     | 1.024035ms       | notmatch   | [0m
+2016/01/02 10:49:57 [1;34m[router.go:854] [D] | GET        | /server-status                           | 1.267448ms       | notmatch   | [0m
+2016/01/02 12:36:45 [1;34m[router.go:854] [D] | HEAD       | /                                        | 127.667µs        | match      | /                                        | [0m
+2016/01/02 12:48:08 [1;34m[router.go:854] [D] | GET        | /                                        | 9.265941ms       | match      | /                                        | [0m
+2016/01/02 13:42:39 [1;34m[router.go:854] [D] | GET        | /server-status                           | 928.407µs        | notmatch   | [0m
+2016/01/02 13:55:50 [1;34m[router.go:854] [D] | GET        | /                                        | 9.350617ms       | match      | /                                        | [0m
+2016/01/02 13:55:52 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.20179ms        | notmatch   | [0m
+2016/01/02 15:17:47 [1;34m[router.go:854] [D] | GET        | /server-status                           | 977.782µs        | notmatch   | [0m
+2016/01/02 16:27:37 [1;34m[router.go:854] [D] | GET        | /                                        | 8.846912ms       | match      | /                                        | [0m
+2016/01/02 16:35:25 [1;34m[router.go:854] [D] | GET        | /                                        | 8.519758ms       | match      | /                                        | [0m
+2016/01/02 16:36:03 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.102697ms       | notmatch   | [0m
+2016/01/02 16:59:09 [1;34m[router.go:854] [D] | GET        | /server-status                           | 941.242µs        | notmatch   | [0m
+2016/01/02 17:39:02 [1;34m[router.go:854] [D] | GET        | /                                        | 9.254021ms       | match      | /                                        | [0m
+2016/01/02 17:48:20 [1;34m[router.go:854] [D] | GET        | /server-status                           | 973.06µs         | notmatch   | [0m
+2016/01/02 18:25:50 [1;34m[router.go:854] [D] | HEAD       | /                                        | 125.196µs        | match      | /                                        | [0m
+2016/01/02 18:47:32 [1;34m[router.go:854] [D] | GET        | /                                        | 11.859455ms      | match      | /                                        | [0m
+2016/01/02 19:04:58 [1;34m[router.go:854] [D] | GET        | /                                        | 8.91613ms        | match      | /                                        | [0m
+2016/01/02 19:17:51 [1;34m[router.go:854] [D] | GET        | /                                        | 9.387116ms       | match      | /                                        | [0m
+[ORM] - 2016-01-02 19:17:58 - [Queries/default] - [  OK /    db.Query /     0.1ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `tx`, `tx`
+2016/01/02 19:17:58 [1;34m[router.go:854] [D] | POST       | /login                                   | 9.312832ms       | match      | /login                                   | [0m
+[ORM] - 2016-01-02 19:18:07 - [Queries/default] - [  OK /    db.Query /     0.2ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `dishy@qq.com`, `dishy`
+[{5 dishy@qq.com  dishy 2015-12-29 17:15:58.598500371 +0000 UTC}]
+models.User
+
+2016/01/02 19:18:07 [1;34m[router.go:854] [D] | POST       | /login                                   | 919.454µs        | match      | /login                                   | [0m
+
+2016/01/02 19:18:08 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.87332ms        | match      | /view                                    | [0m
+
+2016/01/02 19:18:17 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.47478ms        | match      | /view                                    | [0m
+
+2016/01/02 19:20:40 [1;34m[router.go:854] [D] | GET        | /view                                    | 5.962633ms       | match      | /view                                    | [0m
+[ORM] - 2016-01-02 19:20:49 - [Queries/default] - [  OK /    db.Query /     0.1ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `dishy@qq.com`, `disy`
+2016/01/02 19:20:49 [1;34m[router.go:854] [D] | POST       | /login                                   | 11.03967ms       | match      | /login                                   | [0m
+[ORM] - 2016-01-02 19:20:55 - [Queries/default] - [  OK /    db.Query /     0.1ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `dishy@qq.com`, `dishy`
+[{5 dishy@qq.com  dishy 2015-12-29 17:15:58.598500371 +0000 UTC}]
+models.User
+
+2016/01/02 19:20:55 [1;34m[router.go:854] [D] | POST       | /login                                   | 710.722µs        | match      | /login                                   | [0m
+
+2016/01/02 19:20:55 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.480224ms       | match      | /view                                    | [0m
+2016/01/02 19:35:57 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 936.846µs        | notmatch   | [0m
+2016/01/02 20:05:51 [1;34m[router.go:854] [D] | GET        | /server-status                           | 1.182828ms       | notmatch   | [0m
+2016/01/02 22:07:55 [1;34m[router.go:854] [D] | GET        | /server-status                           | 975.741µs        | notmatch   | [0m
+2016/01/02 22:48:12 [1;34m[router.go:854] [D] | GET        | /                                        | 8.867474ms       | match      | /                                        | [0m
+2016/01/02 23:33:03 [1;34m[router.go:854] [D] | GET        | /server-status                           | 955.718µs        | notmatch   | [0m
+2016/01/03 00:04:28 [1;34m[router.go:854] [D] | GET        | /                                        | 8.725328ms       | match      | /                                        | [0m
+2016/01/03 00:04:35 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.123214ms       | notmatch   | [0m
+2016/01/03 00:05:24 [1;34m[router.go:854] [D] | GET        | /                                        | 9.035617ms       | match      | /                                        | [0m
+2016/01/03 00:05:24 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.079187ms       | notmatch   | [0m
+2016/01/03 00:07:39 [1;34m[router.go:854] [D] | HEAD       | /                                        | 122.778µs        | match      | /                                        | [0m
+2016/01/03 03:00:02 [1;34m[router.go:854] [D] | CONNECT    |                                          | 919.777µs        | notmatch   | [0m
+2016/01/03 04:49:50 [1;34m[router.go:854] [D] | GET        | /server-status                           | 945.501µs        | notmatch   | [0m
+2016/01/03 06:29:51 [1;34m[router.go:854] [D] | CONNECT    |                                          | 963.032µs        | notmatch   | [0m
+2016/01/03 07:17:42 [1;34m[router.go:854] [D] | GET        | /server-status                           | 965.338µs        | notmatch   | [0m
+2016/01/03 09:20:08 [1;34m[router.go:854] [D] | HEAD       | /                                        | 141.834µs        | match      | /                                        | [0m
+2016/01/03 09:32:06 [1;34m[router.go:854] [D] | GET        | /tmUnblock.cgi                           | 1.060929ms       | notmatch   | [0m
+2016/01/03 09:32:07 [1;34m[router.go:854] [D] | GET        | /                                        | 9.727867ms       | match      | /                                        | [0m
+2016/01/03 09:50:59 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 1.213371ms       | notmatch   | [0m
+2016/01/03 09:55:40 [1;34m[router.go:854] [D] | GET        | /                                        | 9.044505ms       | match      | /                                        | [0m
+2016/01/03 09:55:41 [1;34m[router.go:854] [D] | GET        | /sitemap.xml                             | 1.098384ms       | notmatch   | [0m
+2016/01/03 10:44:49 [1;34m[router.go:854] [D] | GET        | /server-status                           | 918.339µs        | notmatch   | [0m
+2016/01/03 13:11:28 [1;34m[router.go:854] [D] | GET        | /                                        | 8.797627ms       | match      | /                                        | [0m
+[ORM] - 2016-01-03 13:11:41 - [Queries/default] - [  OK /    db.Query /     0.1ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `dishy@qq.com`, `dishy`
+[{5 dishy@qq.com  dishy 2015-12-29 17:15:58.598500371 +0000 UTC}]
+models.User
+
+2016/01/03 13:11:41 [1;34m[router.go:854] [D] | POST       | /login                                   | 666.92µs         | match      | /login                                   | [0m
+
+2016/01/03 13:11:41 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.354808ms       | match      | /view                                    | [0m
+exit status 2
