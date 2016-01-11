@@ -1,19 +1,39 @@
 {{template "header"}}
 
-Let's code
-<div id= "flipbook">
-<div>Page 1 with default size</div>
-<div class="own-size" style="width:100;height:100px;">
-Page 2 with own size
+<div class = "row" style = "height: 50px">
 </div>
+<div class = "container-fluid" style="margin-left: 7%;margin-right: 23%">
+  <table class = "table table-toggle table-bordered table-hover">
+     <caption>基本的表格布局</caption>
+    <thead class = "active">
+      <td>姓名</td>
+      <td>年龄</td>
+      <td>性别</td>
+      <td>地址</td>
+      <td>操作</td>
+    </thead>
+    <tbody>
+	{{range $index,$elem := .data}}
+		<tr class = {{if eq 0 ($index | tooggle1)}}"info"{{else}}"success"{{end}}>
+			<td>{{$elem.Name}}</td>
+			<td>{{$elem.Age}}</td>
+			<td>{{$elem.Sex}}</td>
+			<td>{{$elem.Addr}}</td>
+			<td><button type = "button" class = "btn btn-primary btn-sm" id = "edit">编辑</button>&nbsp;&nbsp;<button type="button" class = "btn  btn-danger btn-sm" disabled = "disabled">删除</button></td>
+		</tr>
+	{{end}}	
+  </tbody>
+  </table>
+</div>
+<div>
 </div>
 <script type="text/javascript">
+    var data = {{.data}};
+	console.log(data);
+  $.ajax({
 
+  })
 </script>
-<script type="text/javascript" src="/static/js/turnjs4/lib/hash.js"></script>
-<script type="text/javascript" src="/static/js/turnjs4/lib/turn.min.js"></script>
-<script type="text/javascript" src="/static/js/turnjs4/lib/turn.html4.min.js"></script>
-<script type="text/javascript" src="/static/js/turnjs4/lib/zoom.min.js"></script>
-<script type="text/javascript" src="/static/js/turnjs4/lib/bookshelf.js"></script>
+
 
 {{template "footer"}}

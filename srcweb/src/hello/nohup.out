@@ -1330,3 +1330,480 @@ models.User
 
 2016/01/03 13:11:41 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.354808ms       | match      | /view                                    | [0m
 exit status 2
+table `category` already exists, skip
+table `topic` already exists, skip
+table `user` already exists, skip
+2016/01/08 00:25:30 [1;34m[asm_amd64.s:2232] [I] http server Running on :80[0m
+2016/01/08 01:45:03 [1;34m[router.go:854] [D] | HEAD       | /                                        | 737.294µs        | match      | /                                        | [0m
+2016/01/08 03:03:53 [1;34m[router.go:854] [D] | GET        | /                                        | 9.922464ms       | match      | /                                        | [0m
+2016/01/08 03:19:49 [1;34m[router.go:854] [D] | HEAD       | /                                        | 155.815µs        | match      | /                                        | [0m
+2016/01/08 04:22:38 [1;34m[router.go:854] [D] | HEAD       | /                                        | 142.588µs        | match      | /                                        | [0m
+2016/01/08 04:23:18 [1;34m[router.go:854] [D] | HEAD       | /                                        | 138.363µs        | match      | /                                        | [0m
+2016/01/08 04:47:16 [1;34m[router.go:854] [D] | HEAD       | /                                        | 150.867µs        | match      | /                                        | [0m
+2016/01/08 04:57:26 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.059778ms       | notmatch   | [0m
+loginFilter user
+<nil>
+2016/01/08 08:05:02 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 190.774µs        | notmatch   | [0m
+2016/01/08 08:53:33 [1;34m[router.go:854] [D] | GET        | /                                        | 10.459809ms      | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/08 09:02:19 [1;34m[router.go:854] [D] | GET        | /view/document                           | 192.821µs        | notmatch   | [0m
+2016/01/08 09:02:19 [1;34m[router.go:854] [D] | GET        | /                                        | 9.803095ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+in login post
+[ORM] - 2016-01-08 09:02:21 - [Queries/default] - [  OK /    db.Query /     0.2ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/08 09:02:21 [1;34m[router.go:854] [D] | POST       | /login                                   | 989.062µs        | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/08 09:02:21 [1;34m[router.go:854] [D] | GET        | /view                                    | 8.728881ms       | match      | /view                                    | [0m
+loginFilter user
+test
+2016/01/08 09:02:25 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.727828ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 09:02:25 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.073524ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 09:02:28 [1;34m[router.go:854] [D] | GET        | /view/document                           | 9.73181ms        | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 09:02:28 [1;34m[router.go:854] [D] | GET        | /view/document                           | 6.928069ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 09:02:29 [1;34m[router.go:854] [D] | GET        | /view/document                           | 9.421639ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 09:02:29 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.23972ms        | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 09:02:29 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.299195ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 09:02:29 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.571958ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 09:02:30 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.295085ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 09:02:30 [1;34m[router.go:854] [D] | GET        | /view/document                           | 7.954362ms       | match      | /view/document                           | [0m
+2016/01/08 09:13:32 [1;34m[router.go:854] [D] | GET        | /                                        | 9.267197ms       | match      | /                                        | [0m
+loginFilter user
+test
+in login post
+[ORM] - 2016-01-08 09:13:39 - [Queries/default] - [  OK /    db.Query /     0.2ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/08 09:13:39 [1;34m[router.go:854] [D] | POST       | /login                                   | 913.941µs        | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/08 09:13:39 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.953163ms       | match      | /view                                    | [0m
+loginFilter user
+test
+2016/01/08 09:14:12 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.173552ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 09:14:12 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.150384ms       | match      | /view/document                           | [0m
+2016/01/08 09:18:50 [1;34m[router.go:854] [D] | HEAD       | /                                        | 127.57µs         | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/08 09:46:40 [1;34m[router.go:854] [D] | GET        | /azenv2.php                              | 166.808µs        | notmatch   | [0m
+2016/01/08 09:46:40 [1;34m[router.go:854] [D] | CONNECT    |                                          | 908.788µs        | notmatch   | [0m
+2016/01/08 09:47:02 [1;34m[router.go:854] [D] | GET        | /                                        | 9.527142ms       | match      | /                                        | [0m
+2016/01/08 09:47:02 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.044577ms       | notmatch   | [0m
+2016/01/08 09:52:44 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.20177ms        | notmatch   | [0m
+2016/01/08 09:53:14 [1;34m[router.go:854] [D] | GET        | /                                        | 9.616764ms       | match      | /                                        | [0m
+2016/01/08 09:58:43 [1;34m[router.go:854] [D] | GET        | /                                        | 10.988482ms      | match      | /                                        | [0m
+loginFilter user
+test
+in login post
+[ORM] - 2016-01-08 09:58:45 - [Queries/default] - [  OK /    db.Query /     0.1ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/08 09:58:45 [1;34m[router.go:854] [D] | POST       | /login                                   | 700.893µs        | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/08 09:58:45 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.911376ms       | match      | /view                                    | [0m
+loginFilter user
+test
+2016/01/08 09:58:47 [1;34m[router.go:854] [D] | GET        | /view/document                           | 9.433139ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 09:58:47 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.641961ms       | match      | /view/document                           | [0m
+2016/01/08 10:14:10 [1;34m[router.go:854] [D] | GET        | /                                        | 11.783697ms      | match      | /                                        | [0m
+loginFilter user
+<nil>
+in login post
+[ORM] - 2016-01-08 10:14:20 - [Queries/default] - [  OK /    db.Query /     0.1ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/08 10:14:20 [1;34m[router.go:854] [D] | POST       | /login                                   | 784.66µs         | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/08 10:14:20 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.860514ms       | match      | /view                                    | [0m
+loginFilter user
+test
+2016/01/08 10:14:24 [1;34m[router.go:854] [D] | GET        | /logout                                  | 180.456µs        | match      | /logout                                  | [0m
+2016/01/08 10:14:24 [1;34m[router.go:854] [D] | GET        | /                                        | 9.205792ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/08 10:14:28 [1;34m[router.go:854] [D] | GET        | /down                                    | 158.158µs        | notmatch   | [0m
+2016/01/08 10:14:28 [1;34m[router.go:854] [D] | GET        | /                                        | 9.362344ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+in login post
+[ORM] - 2016-01-08 10:14:32 - [Queries/default] - [  OK /    db.Query /     0.1ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/08 10:14:32 [1;34m[router.go:854] [D] | POST       | /login                                   | 681.222µs        | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/08 10:14:32 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.989293ms       | match      | /view                                    | [0m
+loginFilter user
+test
+2016/01/08 10:14:45 [1;34m[router.go:854] [D] | GET        | /register                                | 6.73032ms        | match      | /register                                | [0m
+loginFilter user
+test
+in login post
+[ORM] - 2016-01-08 10:14:58 - [Queries/default] - [  OK /    db.Query /     0.1ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/08 10:14:58 [1;34m[router.go:854] [D] | POST       | /login                                   | 715.161µs        | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/08 10:14:58 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.879053ms       | match      | /view                                    | [0m
+loginFilter user
+test
+2016/01/08 10:15:00 [1;34m[router.go:854] [D] | GET        | /view/document                           | 9.5611ms         | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 10:15:00 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.674431ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 10:15:09 [1;34m[router.go:854] [D] | GET        | /view/document                           | 9.067581ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 10:15:10 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.199297ms       | match      | /view/document                           | [0m
+2016/01/08 10:18:44 [1;34m[router.go:854] [D] | GET        | /                                        | 9.31501ms        | match      | /                                        | [0m
+exit status 2
+table `category` already exists, skip
+table `topic` already exists, skip
+table `user` already exists, skip
+2016/01/08 10:22:09 [1;34m[asm_amd64.s:2232] [I] http server Running on :80[0m
+2016/01/08 10:30:14 [1;34m[router.go:854] [D] | GET        | /                                        | 9.838865ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+in login post
+[ORM] - 2016-01-08 10:30:16 - [Queries/default] - [  OK /    db.Query /     0.2ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/08 10:30:16 [1;34m[router.go:854] [D] | POST       | /login                                   | 980.913µs        | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/08 10:30:16 [1;34m[router.go:854] [D] | GET        | /view                                    | 8.327635ms       | match      | /view                                    | [0m
+loginFilter user
+test
+2016/01/08 10:30:18 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.423448ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 10:30:18 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.169052ms       | match      | /view/document                           | [0m
+2016/01/08 10:38:04 [1;34m[router.go:854] [D] | GET        | /                                        | 9.09482ms        | match      | /                                        | [0m
+2016/01/08 10:43:12 [1;34m[router.go:854] [D] | GET        | /                                        | 10.378035ms      | match      | /                                        | [0m
+2016/01/08 10:44:37 [1;34m[router.go:854] [D] | GET        | /                                        | 8.938232ms       | match      | /                                        | [0m
+2016/01/08 10:44:39 [1;34m[router.go:854] [D] | GET        | /                                        | 8.822593ms       | match      | /                                        | [0m
+2016/01/08 10:44:40 [1;34m[router.go:854] [D] | GET        | /                                        | 8.749452ms       | match      | /                                        | [0m
+2016/01/08 10:44:42 [1;34m[router.go:854] [D] | GET        | /                                        | 8.739505ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/08 10:47:10 [1;34m[router.go:854] [D] | GET        | /azz.php                                 | 247.863µs        | notmatch   | [0m
+2016/01/08 10:47:11 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.085182ms       | notmatch   | [0m
+2016/01/08 11:22:13 [1;34m[router.go:854] [D] | GET        | /                                        | 10.62428ms       | match      | /                                        | [0m
+2016/01/08 11:22:14 [1;34m[router.go:854] [D] | GET        | /                                        | 9.446763ms       | match      | /                                        | [0m
+2016/01/08 11:22:22 [1;34m[router.go:854] [D] | GET        | /                                        | 9.175107ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+in login post
+[ORM] - 2016-01-08 11:23:06 - [Queries/default] - [  OK /    db.Query /     0.2ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/08 11:23:06 [1;34m[router.go:854] [D] | POST       | /login                                   | 818.065µs        | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/08 11:23:06 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.895692ms       | match      | /view                                    | [0m
+2016/01/08 11:26:41 [1;34m[router.go:854] [D] | HEAD       | /                                        | 139.861µs        | match      | /                                        | [0m
+loginFilter user
+test
+in login post
+[ORM] - 2016-01-08 11:43:01 - [Queries/default] - [  OK /    db.Query /     0.1ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/08 11:43:01 [1;34m[router.go:854] [D] | POST       | /login                                   | 694.971µs        | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/08 11:43:01 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.231283ms       | match      | /view                                    | [0m
+2016/01/08 11:48:07 [1;34m[router.go:854] [D] | GET        | /                                        | 11.065125ms      | match      | /                                        | [0m
+2016/01/08 11:48:08 [1;34m[router.go:854] [D] | GET        | /                                        | 8.758587ms       | match      | /                                        | [0m
+2016/01/08 11:53:58 [1;34m[router.go:854] [D] | GET        | /                                        | 8.756743ms       | match      | /                                        | [0m
+2016/01/08 11:54:01 [1;34m[router.go:854] [D] | GET        | /                                        | 10.405994ms      | match      | /                                        | [0m
+2016/01/08 11:54:10 [1;34m[router.go:854] [D] | GET        | /                                        | 14.817242ms      | match      | /                                        | [0m
+exit status 2
+table `category` already exists, skip
+table `topic` already exists, skip
+table `user` already exists, skip
+2016/01/08 13:04:46 [1;34m[asm_amd64.s:2232] [I] http server Running on :8080[0m
+2016/01/08 13:06:06 [1;34m[router.go:854] [D] | GET        | /                                        | 11.426098ms      | match      | /                                        | [0m
+2016/01/08 13:06:11 [1;34m[router.go:854] [D] | GET        | /                                        | 8.751539ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+in login post
+[ORM] - 2016-01-08 13:08:01 - [Queries/default] - [  OK /    db.Query /     0.1ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/08 13:08:01 [1;34m[router.go:854] [D] | POST       | /login                                   | 753.37µs         | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/08 13:08:01 [1;34m[router.go:854] [D] | GET        | /view                                    | 8.493286ms       | match      | /view                                    | [0m
+2016/01/08 13:12:09 [1;34m[router.go:854] [D] | GET        | /                                        | 8.804214ms       | match      | /                                        | [0m
+2016/01/08 13:19:30 [1;34m[router.go:854] [D] | GET        | /                                        | 11.202402ms      | match      | /                                        | [0m
+2016/01/08 13:19:43 [1;34m[router.go:854] [D] | GET        | /                                        | 8.886975ms       | match      | /                                        | [0m
+loginFilter user
+test
+in login post
+[ORM] - 2016-01-08 13:19:47 - [Queries/default] - [  OK /    db.Query /     0.1ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/08 13:19:47 [1;34m[router.go:854] [D] | POST       | /login                                   | 701.192µs        | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/08 13:19:47 [1;34m[router.go:854] [D] | GET        | /view                                    | 6.698085ms       | match      | /view                                    | [0m
+loginFilter user
+test
+2016/01/08 13:26:46 [1;34m[router.go:854] [D] | GET        | /view/document                           | 6.66091ms        | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/08 13:26:46 [1;34m[router.go:854] [D] | GET        | /view/document                           | 7.888042ms       | match      | /view/document                           | [0m
+loginFilter user
+<nil>
+2016/01/08 13:28:25 [1;34m[router.go:854] [D] | GET        | /reader/about/                           | 157.95µs         | notmatch   | [0m
+2016/01/08 13:28:25 [1;34m[router.go:854] [D] | GET        | /                                        | 8.965535ms       | match      | /                                        | [0m
+2016/01/08 15:35:18 [1;34m[router.go:854] [D] | GET        | /                                        | 9.599689ms       | match      | /                                        | [0m
+2016/01/08 15:53:22 [1;34m[router.go:854] [D] | GET        | /                                        | 9.235399ms       | match      | /                                        | [0m
+2016/01/08 15:53:23 [1;34m[router.go:854] [D] | GET        | /                                        | 9.843508ms       | match      | /                                        | [0m
+2016/01/08 15:53:32 [1;34m[router.go:854] [D] | GET        | /                                        | 13.136841ms      | match      | /                                        | [0m
+2016/01/08 15:53:32 [1;34m[router.go:854] [D] | GET        | /                                        | 9.556324ms       | match      | /                                        | [0m
+2016/01/08 15:53:33 [1;34m[router.go:854] [D] | GET        | /                                        | 11.306058ms      | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/08 17:47:50 [1;34m[router.go:854] [D] | GET        | /cgi-bin/chs/numreg/init                 | 183.198µs        | notmatch   | [0m
+loginFilter user
+<nil>
+2016/01/08 18:47:49 [1;34m[router.go:854] [D] | GET        | /reader/about/                           | 197.347µs        | notmatch   | [0m
+2016/01/08 18:47:50 [1;34m[router.go:854] [D] | GET        | /                                        | 10.373284ms      | match      | /                                        | [0m
+2016/01/08 18:55:28 [1;34m[router.go:854] [D] | GET        | /                                        | 9.089295ms       | match      | /                                        | [0m
+2016/01/08 19:01:00 [1;34m[router.go:854] [D] | CONNECT    |                                          | 954.055µs        | notmatch   | [0m
+loginFilter user
+<nil>
+2016/01/08 20:26:06 [1;34m[router.go:854] [D] | GET        | /manager/html                            | 238.818µs        | notmatch   | [0m
+2016/01/08 20:26:06 [1;34m[router.go:854] [D] | GET        | /                                        | 8.901748ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/08 20:40:07 [1;34m[router.go:854] [D] | GET        | /manager/html                            | 178.669µs        | notmatch   | [0m
+2016/01/08 20:40:07 [1;34m[router.go:854] [D] | GET        | /                                        | 9.00722ms        | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/08 20:49:55 [1;34m[router.go:854] [D] | GET        | /manager/html                            | 254.114µs        | notmatch   | [0m
+2016/01/08 20:49:55 [1;34m[router.go:854] [D] | GET        | /                                        | 11.112921ms      | match      | /                                        | [0m
+2016/01/08 23:34:37 [1;34m[router.go:854] [D] | GET        | /                                        | 8.971777ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/09 00:42:26 [1;34m[router.go:854] [D] | GET        | /azenv.php                               | 168.623µs        | notmatch   | [0m
+2016/01/09 00:42:27 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.502777ms       | notmatch   | [0m
+2016/01/09 00:47:34 [1;34m[router.go:854] [D] | GET        | /                                        | 9.411322ms       | match      | /                                        | [0m
+2016/01/09 00:47:35 [1;34m[router.go:854] [D] | GET        | /                                        | 9.00136ms        | match      | /                                        | [0m
+2016/01/09 00:47:36 [1;34m[router.go:854] [D] | GET        | /                                        | 9.164185ms       | match      | /                                        | [0m
+2016/01/09 00:47:36 [1;34m[router.go:854] [D] | GET        | /                                        | 12.394606ms      | match      | /                                        | [0m
+2016/01/09 00:47:40 [1;34m[router.go:854] [D] | GET        | /                                        | 8.726717ms       | match      | /                                        | [0m
+2016/01/09 05:42:53 [1;34m[router.go:854] [D] | GET        | /                                        | 9.071411ms       | match      | /                                        | [0m
+2016/01/09 05:42:54 [1;34m[router.go:854] [D] | GET        | /                                        | 8.854972ms       | match      | /                                        | [0m
+2016/01/09 05:42:54 [1;34m[router.go:854] [D] | GET        | /                                        | 8.694301ms       | match      | /                                        | [0m
+2016/01/09 05:43:03 [1;34m[router.go:854] [D] | GET        | /                                        | 8.927566ms       | match      | /                                        | [0m
+2016/01/09 05:43:03 [1;34m[router.go:854] [D] | GET        | /                                        | 8.930619ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/09 06:41:22 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 163.508µs        | notmatch   | [0m
+loginFilter user
+<nil>
+2016/01/09 08:33:22 [1;34m[router.go:854] [D] | GET        | /manager/html                            | 185.824µs        | notmatch   | [0m
+2016/01/09 08:33:22 [1;34m[router.go:854] [D] | GET        | /                                        | 10.700577ms      | match      | /                                        | [0m
+2016/01/09 09:03:14 [1;34m[router.go:854] [D] | CONNECT    |                                          | 930.515µs        | notmatch   | [0m
+loginFilter user
+<nil>
+2016/01/09 10:46:29 [1;34m[router.go:854] [D] | GET        | /manager/html                            | 198.491µs        | notmatch   | [0m
+2016/01/09 10:46:29 [1;34m[router.go:854] [D] | GET        | /                                        | 24.021006ms      | match      | /                                        | [0m
+2016/01/09 12:00:57 [1;34m[router.go:854] [D] | GET        | /                                        | 9.570148ms       | match      | /                                        | [0m
+2016/01/09 12:59:20 [1;34m[router.go:854] [D] | CONNECT    |                                          | 941.957µs        | notmatch   | [0m
+2016/01/09 15:07:09 [1;34m[router.go:854] [D] | GET        | /                                        | 9.427741ms       | match      | /                                        | [0m
+2016/01/09 15:25:31 [1;34m[router.go:854] [D] | CONNECT    |                                          | 921.766µs        | notmatch   | [0m
+loginFilter user
+<nil>
+2016/01/09 15:32:59 [1;34m[router.go:854] [D] | GET        | /azenv.php                               | 165.049µs        | notmatch   | [0m
+2016/01/09 15:32:59 [1;34m[router.go:854] [D] | CONNECT    |                                          | 958.629µs        | notmatch   | [0m
+2016/01/09 15:36:36 [1;34m[router.go:854] [D] | GET        | /                                        | 8.929186ms       | match      | /                                        | [0m
+2016/01/09 15:36:36 [1;34m[router.go:854] [D] | GET        | /                                        | 9.074762ms       | match      | /                                        | [0m
+2016/01/09 15:36:38 [1;34m[router.go:854] [D] | GET        | /                                        | 8.949828ms       | match      | /                                        | [0m
+2016/01/09 15:36:39 [1;34m[router.go:854] [D] | GET        | /                                        | 10.276065ms      | match      | /                                        | [0m
+2016/01/09 15:36:39 [1;34m[router.go:854] [D] | GET        | /                                        | 8.741509ms       | match      | /                                        | [0m
+2016/01/09 16:58:52 [1;34m[router.go:854] [D] | GET        | /                                        | 10.512585ms      | match      | /                                        | [0m
+2016/01/09 17:01:15 [1;34m[router.go:854] [D] | GET        | /                                        | 9.181343ms       | match      | /                                        | [0m
+2016/01/09 17:41:28 [1;34m[router.go:854] [D] | GET        | /                                        | 171.887918ms     | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/09 19:51:18 [1;34m[router.go:854] [D] | GET        | /manager/html                            | 219.403µs        | notmatch   | [0m
+2016/01/09 19:51:18 [1;34m[router.go:854] [D] | GET        | /                                        | 9.043218ms       | match      | /                                        | [0m
+2016/01/09 20:19:28 [1;34m[router.go:854] [D] | GET        | /                                        | 9.262231ms       | match      | /                                        | [0m
+2016/01/09 23:41:10 [1;34m[router.go:854] [D] | GET        | /                                        | 9.541191ms       | match      | /                                        | [0m
+2016/01/09 23:50:48 [1;34m[router.go:854] [D] | GET        | /                                        | 11.311923ms      | match      | /                                        | [0m
+2016/01/10 00:33:34 [1;34m[router.go:854] [D] | GET        | /                                        | 9.224782ms       | match      | /                                        | [0m
+2016/01/10 00:41:51 [1;34m[router.go:854] [D] | CONNECT    |                                          | 950.647µs        | notmatch   | [0m
+2016/01/10 01:09:46 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.30255ms        | notmatch   | [0m
+2016/01/10 01:32:22 [1;34m[router.go:854] [D] | GET        | /                                        | 9.021392ms       | match      | /                                        | [0m
+2016/01/10 01:32:23 [1;34m[router.go:854] [D] | GET        | /                                        | 34.800555ms      | match      | /                                        | [0m
+2016/01/10 01:32:31 [1;34m[router.go:854] [D] | GET        | /                                        | 8.867669ms       | match      | /                                        | [0m
+2016/01/10 01:32:31 [1;34m[router.go:854] [D] | GET        | /                                        | 9.517153ms       | match      | /                                        | [0m
+2016/01/10 01:32:31 [1;34m[router.go:854] [D] | GET        | /                                        | 8.872625ms       | match      | /                                        | [0m
+2016/01/10 01:42:00 [1;34m[router.go:854] [D] | GET        | /                                        | 9.218454ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/10 05:38:41 [1;34m[router.go:854] [D] | GET        | /ic.asp                                  | 165.259µs        | notmatch   | [0m
+2016/01/10 05:38:41 [1;34m[router.go:854] [D] | GET        | /                                        | 9.208123ms       | match      | /                                        | [0m
+2016/01/10 06:31:50 [1;34m[router.go:854] [D] | GET        | /                                        | 9.742421ms       | match      | /                                        | [0m
+2016/01/10 06:31:51 [1;34m[router.go:854] [D] | GET        | /                                        | 9.593755ms       | match      | /                                        | [0m
+2016/01/10 06:31:51 [1;34m[router.go:854] [D] | GET        | /                                        | 24.735366ms      | match      | /                                        | [0m
+2016/01/10 06:31:53 [1;34m[router.go:854] [D] | GET        | /                                        | 9.124073ms       | match      | /                                        | [0m
+2016/01/10 08:03:33 [1;34m[router.go:854] [D] | CONNECT    |                                          | 900.2µs          | notmatch   | [0m
+2016/01/10 08:12:32 [1;34m[router.go:854] [D] | GET        | /                                        | 8.778049ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/10 08:22:55 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 168.345µs        | notmatch   | [0m
+2016/01/10 09:48:24 [1;34m[router.go:854] [D] | GET        | /                                        | 9.272199ms       | match      | /                                        | [0m
+2016/01/10 12:16:30 [1;34m[router.go:854] [D] | GET        | /                                        | 28.453553ms      | match      | /                                        | [0m
+2016/01/10 12:46:32 [1;34m[router.go:854] [D] | GET        | /                                        | 9.05889ms        | match      | /                                        | [0m
+2016/01/10 12:49:15 [1;34m[router.go:854] [D] | CONNECT    |                                          | 871.275µs        | notmatch   | [0m
+2016/01/10 14:27:06 [1;34m[router.go:854] [D] | CONNECT    |                                          | 917.019µs        | notmatch   | [0m
+2016/01/10 14:27:16 [1;34m[router.go:854] [D] | GET        | /                                        | 9.675011ms       | match      | /                                        | [0m
+2016/01/10 14:46:33 [1;34m[router.go:854] [D] | GET        | /                                        | 10.413017ms      | match      | /                                        | [0m
+2016/01/10 15:03:30 [1;34m[router.go:854] [D] | CONNECT    |                                          | 935.428µs        | notmatch   | [0m
+2016/01/10 15:28:51 [1;34m[router.go:854] [D] | GET        | /                                        | 9.680557ms       | match      | /                                        | [0m
+2016/01/10 15:28:51 [1;34m[router.go:854] [D] | OPTIONS    | /                                        | 17.803819ms      | match      | /                                        | [0m
+2016/01/10 16:28:18 [1;34m[router.go:854] [D] | GET        | /                                        | 9.512005ms       | match      | /                                        | [0m
+2016/01/10 16:28:19 [1;34m[router.go:854] [D] | GET        | /                                        | 8.73976ms        | match      | /                                        | [0m
+2016/01/10 16:28:19 [1;34m[router.go:854] [D] | GET        | /                                        | 9.735955ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/10 16:32:06 [1;34m[router.go:854] [D] | GET        | /testproxy.php                           | 181.952µs        | notmatch   | [0m
+2016/01/10 18:33:40 [1;34m[router.go:854] [D] | GET        | /                                        | 9.524626ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/10 19:18:31 [1;34m[router.go:854] [D] | GET        | /reader/about/                           | 168.681µs        | notmatch   | [0m
+2016/01/10 19:18:31 [1;34m[router.go:854] [D] | GET        | /                                        | 9.068895ms       | match      | /                                        | [0m
+2016/01/10 21:25:27 [1;34m[router.go:854] [D] | GET        | /                                        | 9.020631ms       | match      | /                                        | [0m
+2016/01/10 21:26:27 [1;34m[router.go:854] [D] | GET        | /                                        | 9.332618ms       | match      | /                                        | [0m
+2016/01/10 21:26:30 [1;34m[router.go:854] [D] | GET        | /                                        | 8.583152ms       | match      | /                                        | [0m
+2016/01/10 21:26:41 [1;34m[router.go:854] [D] | GET        | /                                        | 8.71081ms        | match      | /                                        | [0m
+2016/01/10 21:26:43 [1;34m[router.go:854] [D] | GET        | /                                        | 9.109872ms       | match      | /                                        | [0m
+2016/01/10 22:27:13 [1;34m[router.go:854] [D] | GET        | /                                        | 9.21463ms        | match      | /                                        | [0m
+2016/01/10 22:29:21 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.072586ms       | notmatch   | [0m
+loginFilter user
+<nil>
+2016/01/11 02:01:01 [1;34m[router.go:854] [D] | GET        | /azenv.php                               | 219.031µs        | notmatch   | [0m
+2016/01/11 02:01:02 [1;34m[router.go:854] [D] | CONNECT    |                                          | 956.89µs         | notmatch   | [0m
+2016/01/11 02:24:19 [1;34m[router.go:854] [D] | GET        | /                                        | 10.681205ms      | match      | /                                        | [0m
+2016/01/11 02:24:26 [1;34m[router.go:854] [D] | GET        | /                                        | 9.317403ms       | match      | /                                        | [0m
+2016/01/11 02:24:26 [1;34m[router.go:854] [D] | GET        | /                                        | 10.74918ms       | match      | /                                        | [0m
+2016/01/11 02:24:31 [1;34m[router.go:854] [D] | GET        | /                                        | 8.813755ms       | match      | /                                        | [0m
+2016/01/11 02:24:40 [1;34m[router.go:854] [D] | GET        | /                                        | 8.736736ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/11 02:36:01 [1;34m[router.go:854] [D] | GET        | /reader/about/                           | 12.67996ms       | notmatch   | [0m
+2016/01/11 02:36:01 [1;34m[router.go:854] [D] | GET        | /                                        | 24.752865ms      | match      | /                                        | [0m
+2016/01/11 03:21:58 [1;34m[router.go:854] [D] | GET        | /                                        | 11.983342ms      | match      | /                                        | [0m
+2016/01/11 04:00:39 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.073077ms       | notmatch   | [0m
+2016/01/11 04:21:42 [1;34m[router.go:854] [D] | CONNECT    |                                          | 878.935µs        | notmatch   | [0m
+loginFilter user
+<nil>
+2016/01/11 05:07:38 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.113081ms       | notmatch   | [0m
+2016/01/11 05:07:40 [1;34m[router.go:854] [D] | CONNECT    |                                          | 1.110964ms       | notmatch   | [0m
+loginFilter user
+<nil>
+2016/01/11 06:01:46 [1;34m[router.go:854] [D] | GET        | /                                        | 31.795488ms      | match      | /                                        | [0m
+2016/01/11 07:21:51 [1;34m[router.go:854] [D] | GET        | /                                        | 9.138334ms       | match      | /                                        | [0m
+2016/01/11 07:21:51 [1;34m[router.go:854] [D] | GET        | /                                        | 8.933347ms       | match      | /                                        | [0m
+2016/01/11 07:21:52 [1;34m[router.go:854] [D] | GET        | /                                        | 8.804337ms       | match      | /                                        | [0m
+2016/01/11 07:21:52 [1;34m[router.go:854] [D] | GET        | /                                        | 10.425576ms      | match      | /                                        | [0m
+2016/01/11 07:22:01 [1;34m[router.go:854] [D] | GET        | /                                        | 8.826592ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+2016/01/11 07:40:35 [1;34m[router.go:854] [D] | GET        | /cgi-bin/chs/numreg/init                 | 164.038µs        | notmatch   | [0m
+2016/01/11 08:57:24 [1;34m[router.go:854] [D] | GET        | /                                        | 10.286554ms      | match      | /                                        | [0m
+2016/01/11 09:37:29 [1;34m[router.go:854] [D] | CONNECT    |                                          | 945.467µs        | notmatch   | [0m
+2016/01/11 09:46:53 [1;34m[router.go:854] [D] | GET        | /                                        | 13.906827ms      | match      | /                                        | [0m
+2016/01/11 10:22:53 [1;34m[router.go:854] [D] | GET        | /                                        | 24.24025ms       | match      | /                                        | [0m
+loginFilter user
+<nil>
+in login post
+[ORM] - 2016-01-11 10:22:59 - [Queries/default] - [  OK /    db.Query /    30.3ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/11 10:22:59 [1;34m[router.go:854] [D] | POST       | /login                                   | 160.612164ms     | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/11 10:22:59 [1;34m[router.go:854] [D] | GET        | /view                                    | 10.762821ms      | match      | /view                                    | [0m
+loginFilter user
+test
+2016/01/11 10:23:06 [1;34m[router.go:854] [D] | GET        | /view/document                           | 17.33128ms       | match      | /view/document                           | [0m
+loginFilter user
+test
+2016/01/11 10:23:06 [1;34m[router.go:854] [D] | GET        | /view/document                           | 8.286819ms       | match      | /view/document                           | [0m
+2016/01/11 10:45:44 [1;34m[router.go:854] [D] | GET        | /                                        | 9.24852ms        | match      | /                                        | [0m
+loginFilter user
+<nil>
+in login post
+[ORM] - 2016-01-11 10:45:51 - [Queries/default] - [  OK /    db.Query /     0.2ms] - [SELECT T0.`id`, T0.`email`, T0.`nick_name`, T0.`passwd`, T0.`created_time` FROM `user` T0 WHERE T0.`email` = ? AND T0.`passwd` = ? LIMIT 1000] - `test@qq.com`, `test`
+[{7 test@qq.com test test 2016-01-04 11:09:14.094416196 +0000 UTC}]
+models.User
+test
+2016/01/11 10:45:51 [1;34m[router.go:854] [D] | POST       | /login                                   | 3.614178ms       | match      | /login                                   | [0m
+loginFilter user
+test
+test
+2016/01/11 10:45:51 [1;34m[router.go:854] [D] | GET        | /view                                    | 7.927074ms       | match      | /view                                    | [0m
+2016/01/11 11:54:46 [1;34m[router.go:854] [D] | GET        | /                                        | 23.031559ms      | match      | /                                        | [0m
+2016/01/11 12:47:53 [1;34m[router.go:854] [D] | GET        | /                                        | 26.681145ms      | match      | /                                        | [0m
+2016/01/11 13:13:41 [1;34m[router.go:854] [D] | GET        | /                                        | 18.079974ms      | match      | /                                        | [0m
+2016/01/11 14:51:22 [1;34m[router.go:854] [D] | GET        | /                                        | 9.088271ms       | match      | /                                        | [0m

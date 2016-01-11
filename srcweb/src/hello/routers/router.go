@@ -4,6 +4,7 @@ import (
 	"github.com/astaxie/beego"
 	"hello/controllers"
 	"github.com/astaxie/beego/context"
+	"fmt"
 )
 
 func init() {
@@ -19,7 +20,10 @@ func init() {
 func loginFilter(ctx *context.Context) {
     
 	user := ctx.Input.CruSession.Get("user")
-	if user == "" && ctx.Request.RequestURI != "/" {
+	//user := this.GetSession("user")
+	fmt.Println("loginFilter user" )
+		fmt.Println(user)
+	if user == nil && ctx.Request.RequestURI != "/" && ctx.Request.RequestURI != "/login"{
         ctx.Redirect(302, "/")
     }
 }

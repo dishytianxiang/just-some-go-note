@@ -16,6 +16,7 @@ func (this *LoginController) Get() {
 	this.TplNames = "register.html"
 }
 func (this *LoginController) Post() {
+	fmt.Println("in login post")
 	//this.Ctx.WriteString(fmt.Sprint(this.Input()))
 	email := this.Input().Get("email")
 	passwd := this.Input().Get("passwd")
